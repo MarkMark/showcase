@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { Switch, Route  }   from 'react-router-dom'
+
+
+import Home                 from './Scenes/Home/Homepage'
 
 
 class Main extends Component {
@@ -7,7 +11,11 @@ class Main extends Component {
     return (
 
       <main>
-        <p>This is main</p>
+        <Switch>
+
+          <Route exact path='/' component={Home}/>
+
+        </Switch>
       </main>
 
     )
