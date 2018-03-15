@@ -1,0 +1,15 @@
+
+.c-hero {
+  align-items: center;
+  display: flex;
+  min-height: 400px;
+  text-align: center;
+  margin-bottom: $global-spacing-quaternary;
+  position: relative;
+
+  .o-wrapper { width: 100%; }
+
+  h1 { text-transform: uppercase; }
+
+}
+

@@ -1,0 +1,20 @@
+
+.c-button {
+  background: $colour-black;
+  border-radius: 20px;
+  color: $colour-white-text;
+  display: inline-block;
+  font-weight: $global-font-light;
+  margin-bottom: $global-spacing-primary;
+  padding: $global-spacing-secondary $global-spacing-primary;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background .2s linear;
+
+  &:hover { background: rgba($colour-black, .9); }
+
+
+  & + & { margin-left: $global-spacing-primary; }
+
+}
+

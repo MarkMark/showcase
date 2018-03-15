@@ -11,3 +11,42 @@
 
 $global-radius: 3px !default;
 $global-transition: all 300ms ease-in-out !default;
+
+$global-font: 'IBM Plex Sans', sans-serif !default;
+
+$global-font-light: 300 !default;
+$global-font-regular: 400 !default;
+$global-font-medium: 500 !default;
+
+
+$global-spacing-primary    : 16px;
+$global-spacing-secondary  : ($global-spacing-primary / 2);
+$global-spacing-tertiary   : ($global-spacing-primary * 2);
+$global-spacing-quaternary : ($global-spacing-primary * 3);
+$global-spacing-quinary    : ($global-spacing-secondary / 2);
+// $global-spacing-senary:
+// $global-spacing-septenary:
+// $global-spacing-octonary:
+// $global-spacing-nonary:
+// $global-spacing-denary:
+
+
+
+// Black colour
+$colour-black: #000;
+$colour-black-text: rgba(0,0,0,0.87);
+$colour-black-secondary-text: rgba(0,0,0,0.54);
+$colour-black-icons: rgba(0,0,0,0.54);
+$colour-black-disabled: rgba(0,0,0,0.26);
+$colour-black-hint-text: rgba(0,0,0,0.26);
+$colour-black-dividers: rgba(0,0,0,0.12);
+
+
+// White colour
+$colour-white: #fff;
+$colour-white-text: #fff;
+$colour-white-secondary-text: rgba(255,255,255,0.7);
+$colour-white-icons: #fff;
+$colour-white-disabled: rgba(255,255,255,0.3);
+$colour-white-hint-text: rgba(255,255,255,0.3);
+$colour-white-dividers: rgba(255,255,255,0.12);

@@ -1,0 +1,16 @@
+
+.c-footer {
+  border-top: 1px solid $colour-black-dividers;
+  padding: $global-spacing-primary;
+
+  p {
+    color: $colour-black-secondary-text;
+    font-size: 12px;
+    font-weight: $global-font-light;
+    margin: 0;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+}
+
