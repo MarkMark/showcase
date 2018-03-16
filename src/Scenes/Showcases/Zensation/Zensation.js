@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Hero                 from './Components/Hero'
 import Linebreak            from '../../../Components/Linebreak/Linebreak'
 
+import ShowcasesPNG_devices from '../../../img/showcase/zensation/showcase-responsive-2.png'
+import ShowcasesPNG_mac     from '../../../img/showcase/zensation/showcase-mac.png'
+
 class Zensation extends Component {
 
   render() {
@@ -49,6 +52,13 @@ class Zensation extends Component {
 
 
         <Linebreak />
+
+
+        <div className="u-border--bottom u-margin-bottom-large">
+          <div className="o-wrapper u-text-align--center">
+            <img src={ShowcasesPNG_devices} alt="Zensation devices" />
+          </div>
+        </div>
 
 
         <div className="o-wrapper">
@@ -122,6 +132,10 @@ class Zensation extends Component {
             </div>
 
           </div>
+        </div>
+
+        <div className="o-wrapper u-text-align--center">
+          <img src={ShowcasesPNG_mac} alt="Zensation mac" />
         </div>
 
 
