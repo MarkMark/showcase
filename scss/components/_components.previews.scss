@@ -41,6 +41,7 @@
 
     &__screenshot {
       margin-bottom: $global-spacing-secondary;
+      overflow: hidden;
       position: relative;
 
       &::before {
