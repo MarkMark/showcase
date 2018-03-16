@@ -6,6 +6,8 @@ import Home                 from './Scenes/Home/Homepage'
 import Showcase             from './Scenes/Showcase/Showcase'
 import Showcase_zensation   from './Scenes/Showcases/Zensation/Zensation'
 import Showcase_runawayPets from './Scenes/Showcases/RunawayPets/RunawayPets'
+import Showcase_mendr       from './Scenes/Showcases/Mendr/Mendr'
+import Showcase_cooltraxApp from './Scenes/Showcases/CooltraxApp/CooltraxApp'
 
 
 class Main extends Component {
@@ -20,6 +22,8 @@ class Main extends Component {
           <Route exact path='/showcase' component={Showcase}/>
           <Route path='/showcase/zensation' component={Showcase_zensation}/>
           <Route path='/showcase/runaway-pets' component={Showcase_runawayPets}/>
+          <Route path='/showcase/mendr' component={Showcase_mendr}/>
+          <Route path='/showcase/cooltrax-app' component={Showcase_cooltraxApp}/>
 
         </Switch>
       </main>
