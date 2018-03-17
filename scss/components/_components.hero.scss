@@ -9,10 +9,11 @@
   margin-bottom: $global-spacing-quaternary;
   position: relative;
 
-  &--zensation    { background-image: url('./img/heros/hero-zensation.jpg'); }
-  &--runaway      { background-image: url('./img/heros/hero-runaway-pets.jpg'); }
-  &--mendr        { background-image: url('./img/heros/hero-mendr.jpg'); }
-  &--cooltrax-app { background-image: url('./img/heros/hero-cooltrax-app.jpg'); }
+  &--zensation     { background-image: url('./img/heros/hero-zensation.jpg'); }
+  &--runaway       { background-image: url('./img/heros/hero-runaway-pets.jpg'); }
+  &--mendr         { background-image: url('./img/heros/hero-mendr.jpg'); }
+  &--cooltrax-app  { background-image: url('./img/heros/hero-cooltrax-app.jpg'); }
+  &--sanctuary-app { background-image: url('./img/heros/hero-sanctuary-app.jpg'); }
 
   .o-wrapper { width: 100%; }
 

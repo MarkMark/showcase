@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Hero                 from './Components/Hero'
 import Linebreak            from '../../../Components/Linebreak/Linebreak'
 
+
+import ShowcasesPNG_hand    from '../../../img/showcase/cooltrax-app/hand-settings.png'
+
+
 class Zensation extends Component {
 
   render() {
@@ -142,6 +146,11 @@ class Zensation extends Component {
             </div>
 
           </div>
+        </div>
+
+
+        <div className="o-wrapper u-text-align--center">
+          <img src={ShowcasesPNG_hand} alt="cooltrax app settings" />
         </div>
 
 

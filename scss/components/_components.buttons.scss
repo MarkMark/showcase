@@ -1,12 +1,13 @@
 
 .c-button {
   background: $colour-black;
-  border-radius: 20px;
+  border-radius: 25px;
   color: $colour-white-text;
   display: inline-block;
+  font-size: 12px;
   font-weight: $global-font-light;
   margin-bottom: $global-spacing-primary;
-  padding: $global-spacing-secondary $global-spacing-primary;
+  padding: $global-spacing-primary $global-spacing-tertiary;
   text-decoration: none;
   text-transform: uppercase;
   transition: background .2s linear;

@@ -1,8 +1,14 @@
-import React, { Component } from 'react';
-import Hero                 from './Components/Hero'
-import Linebreak            from '../../../Components/Linebreak/Linebreak'
+import React, { Component }    from 'react';
+import Hero                    from './Components/Hero'
+import Linebreak               from '../../../Components/Linebreak/Linebreak'
 
-class Zensation extends Component {
+
+import ShowcasesPNG_mac        from '../../../img/showcase/mendr/showcase-mac-mendr.png'
+import ShowcasesPNG_macbook    from '../../../img/showcase/mendr/showcase-macbook-mendr.png'
+import ShowcasesPNG_responsive from '../../../img/showcase/mendr/showcase-responsive-full.png'
+
+
+class Mendr extends Component {
 
   render() {
 
@@ -74,6 +80,12 @@ class Zensation extends Component {
               <p>We wanted to make mendr as accessible and open to use to everyone and make their user journey as pleasant and easy as possible. Understanding that the customers would already be under pressure & stressed due to a broken item & we didn't want to add to that.</p>
             </div>
           </div>
+
+          <div className="o-layout u-margin-bottom-large u-text-align--center">
+            <div className="o-layout__item u-1/1">
+              <img src={ShowcasesPNG_macbook} alt="Mendr macbook" />
+            </div>
+          </div>
         </div>
 
 
@@ -93,6 +105,12 @@ class Zensation extends Component {
             </div>
           </div>
 
+          <div className="o-layout u-margin-bottom-large u-text-align--center">
+            <div className="o-layout__item u-1/1">
+              <img src={ShowcasesPNG_responsive} alt="Mendr macbook" />
+            </div>
+          </div>
+
           <div className="o-layout u-margin-bottom-large">
             <div className="o-layout__item u-1/1">
               <h4>Frameworks</h4>
@@ -108,7 +126,7 @@ class Zensation extends Component {
             <div className="o-layout__item u-1/1">
               <h4>Languages</h4>
 
-              <p><b>JavaScript:</b> Due to our choice of using <b>AngularJS</b>, it was a no-brainer to use <b>TypeScript</b>. Being able to write the latest <b>ES6</b> scripts, utilising modules, classes & its built-in static type-checking, reduced missed bugs and kept our code clean & <span title="Don't Repeat Yourself">DRY</span>.</p>
+              <p><b>JS:</b> Due to our choice of using <b>AngularJS</b>, it was a no-brainer to use <b>TypeScript</b>. Being able to write the latest <b>ES6</b> scripts, utilising modules, classes & its built-in static type-checking, reduced missed bugs and kept our code clean & <span title="Don't Repeat Yourself">DRY</span>.</p>
 
               <p><b>CSS:</b> My personal opinion is that <b>SCSS</b> is the best preprocessor. Using advanced features which include variables, mixins, functions and maps, I was able to give mendr a truly bespoke and individual look. Organising SCSS is really important as spreadsheets can quickly grow and get out of hand so utilising <b>BEM</b> naming convention and organising the folder structure into the popular inverted triangle methodology kept the development area as clean and as <span title="Don't Repeat Yourself">DRY</span> as possible.</p>
 
@@ -198,8 +216,14 @@ class Zensation extends Component {
             </div>
 
           </div>
-        </div>
 
+          <div className="o-layout u-text-align--center">
+            <div className="o-layout__item u-1/1">
+              <img src={ShowcasesPNG_mac} alt="Mendr macbook" />
+            </div>
+          </div>
+
+        </div>
 
       </section>
 
@@ -209,4 +233,4 @@ class Zensation extends Component {
 
 }
 
-export default Zensation;
+export default Mendr;
