@@ -11,6 +11,10 @@ class Header extends Component {
       <header className="c-header">
         <div className="o-wrapper">
 
+          <NavLink to="/" className="c-header__logo">
+            <span>M</span>
+          </NavLink>
+
           <nav>
             <ul>
               <li><NavLink to="/showcase">Showcase</NavLink></li>

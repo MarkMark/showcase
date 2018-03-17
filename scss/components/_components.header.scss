@@ -2,6 +2,39 @@
 .c-header {
   border-bottom: 1px solid $colour-black-dividers;
 
+  .o-wrapper { position: relative; }
+
+  &__logo {
+    align-items: center;
+    background: $colour-black;
+    border-radius: 100%;
+    bottom: 0;
+    color: $colour-white-text;
+    cursor: pointer;
+    display: flex;
+    font-weight: $global-font-medium;
+    height: 50px;
+    justify-content: center;
+    left: $global-spacing-primary;
+    margin-bottom: auto;
+    margin-top: auto;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    width: 50px;
+
+    &:hover {
+      span { transform: rotate(0deg); }
+    }
+
+    span {
+      font-size: 20px;
+      transform: rotate(-40deg);
+      transition: transform .2s linear;
+    }
+  }
+
 
   nav {
     text-align: right;
@@ -17,7 +50,7 @@
 
   // li { display: inline-block; }
 
-  a {
+  li a {
     color: $colour-black-text;
     display: block;
     font-weight: $global-font-light;
