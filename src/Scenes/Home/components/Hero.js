@@ -11,7 +11,7 @@ class Hero extends Component {
     return (
 
       <div>
-        <div className="c-hero">
+        <div className="c-hero c-hero--home">
           <div className="o-wrapper">
 
             <h1 className="u-giga">Front End Development</h1>

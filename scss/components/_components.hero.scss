@@ -1,13 +1,21 @@
 
 .c-hero {
   align-items: center;
-  background-size: cover;
+  background-color: $colour-grey-300;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  min-height: 400px;
-  text-align: center;
   margin-bottom: $global-spacing-quaternary;
+  min-height: 400px;
   position: relative;
+  text-align: center;
+
+  &--home {
+    background-image: url('./img/heros/hero-homepage-waves.png');
+    background-position: bottom;
+    background-width: 100%;
+  }
 
   &--zensation     { background-image: url('./img/heros/hero-zensation.jpg'); }
   &--runaway       { background-image: url('./img/heros/hero-runaway-pets.jpg'); }
