@@ -13,7 +13,7 @@ class Preview extends Component {
 
   render() {
 
-    let { src, company, desc } = this.props
+    let { src, srcFallback, company, desc } = this.props
 
     return (
 
@@ -29,7 +29,9 @@ class Preview extends Component {
             </div>
 
             <img
+              ref={img => this.img = img}
               src={src}
+              onError={() => this.img.src = srcFallback}
               alt={` ${company} thumbnail`}
             />
 
