@@ -8,6 +8,7 @@ import ThumbJPG_mendr        from '../../img/thumbs/mendr.jpg'
 import ThumbJPG_cooltraxApp  from '../../img/thumbs/cooltrax-app.jpg'
 
 import ThumbJPG_sanctuaryApp from '../../img/thumbs/sanctuary-app.jpg'
+import ThumbJPG_sanctuary    from '../../img/thumbs/sanctuary.jpg'
 import ThumbJPG_cooltrax     from '../../img/thumbs/cooltrax.jpg'
 import ThumbJPG_betfair      from '../../img/thumbs/betfair.jpg'
 import ThumbJPG_empire       from '../../img/thumbs/empire.jpg'
@@ -33,6 +34,8 @@ class Showcase extends Component {
           <h3>Latest work</h3>
 
           <div className="o-layout c-previews">
+
+          <Preview src={ThumbJPG_sanctuary} company={'Sanctuary'} desc={`Sanctuary is a new way of making sure all your employees are safe by sending push notifications to your employees and getting a real-time response back.`} />
 
             <Preview src={ThumbJPG_sanctuaryApp} company={'Sanctuary app'} desc={`Sanctuary is a new way of making sure all your employees are safe by sending push notifications to your employees and getting a real-time response back.`} />
 

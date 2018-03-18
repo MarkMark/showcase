@@ -9,6 +9,7 @@ import Showcase_runawayPets  from './Scenes/Showcases/RunawayPets/RunawayPets'
 import Showcase_mendr        from './Scenes/Showcases/Mendr/Mendr'
 import Showcase_cooltraxApp  from './Scenes/Showcases/CooltraxApp/CooltraxApp'
 import Showcase_sanctuaryApp from './Scenes/Showcases/SanctuaryApp/SanctuaryApp'
+import Showcase_sanctuary    from './Scenes/Showcases/Sanctuary/Sanctuary'
 
 
 class Main extends Component {
@@ -26,6 +27,7 @@ class Main extends Component {
           <Route path='/showcase/mendr' component={Showcase_mendr}/>
           <Route path='/showcase/cooltrax-app' component={Showcase_cooltraxApp}/>
           <Route path='/showcase/sanctuary-app' component={Showcase_sanctuaryApp}/>
+          <Route path='/showcase/sanctuary' component={Showcase_sanctuary}/>
 
         </Switch>
       </main>

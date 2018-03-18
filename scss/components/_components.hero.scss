@@ -26,6 +26,10 @@
     background-image: url('./img/heros/hero-sanctuary-app.jpg');
     color: $colour-white-text;
   }
+  &--sanctuary {
+    background-image: url('./img/heros/hero-sanctuary.jpg');
+    color: $colour-white-text;
+  }
 
   .o-wrapper { width: 100%; }
 
