@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Showcase extends Component {
+class About extends Component {
 
   render() {
 
@@ -11,7 +11,7 @@ class Showcase extends Component {
 
         <div className="o-wrapper u-max-width--500">
 
-          <h1 className="u-text-align--center">About me</h1>
+          <h1 className="u-text-align--center u-margin-bottom-large">About me</h1>
 
           <div className="o-layout">
             <div className="o-layout__item u-1/1">
@@ -34,4 +34,4 @@ class Showcase extends Component {
 
 }
 
-export default Showcase;
+export default About;

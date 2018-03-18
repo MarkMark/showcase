@@ -6,7 +6,7 @@ import Linebreak            from '../../../Components/Linebreak/Linebreak'
 import ShowcasesPNG_dash   from '../../../img/showcase/sanctuary/laptop-dashboard.png'
 
 
-class SanctuaryApp extends Component {
+class Sanctuary extends Component {
 
   render() {
 
@@ -87,4 +87,4 @@ class SanctuaryApp extends Component {
 
 }
 
-export default SanctuaryApp;
+export default Sanctuary;
