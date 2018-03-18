@@ -1,17 +1,18 @@
 
 .c-hero {
   align-items: center;
-  background-color: $colour-grey-300;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   margin-bottom: $global-spacing-quaternary;
   min-height: 400px;
+  padding-top: $global-spacing-tertiary;
   position: relative;
   text-align: center;
 
   &--home {
+    background-color: $colour-grey-300;
     background-image: url('./img/heros/hero-homepage-waves.png');
     background-position: bottom;
     background-width: 100%;
@@ -21,18 +22,19 @@
   &--runaway       { background-image: url('./img/heros/hero-runaway-pets.jpg'); }
   &--mendr         { background-image: url('./img/heros/hero-mendr.jpg'); }
   &--cooltrax-app  { background-image: url('./img/heros/hero-cooltrax-app.jpg'); }
-  &--sanctuary-app { background-image: url('./img/heros/hero-sanctuary-app.jpg'); }
+  &--sanctuary-app {
+    background-image: url('./img/heros/hero-sanctuary-app.jpg');
+    color: $colour-white-text;
+  }
 
   .o-wrapper { width: 100%; }
 
-  h1 {
-    text-transform: uppercase;
+  h1 { text-transform: uppercase; }
 
-    span {
-      background: rgba($colour-white, .8);
-      padding-left: $global-spacing-primary;
-      padding-right: $global-spacing-primary;
-    }
+  span {
+    background: rgba($colour-white, .8);
+    padding-left: $global-spacing-primary;
+    padding-right: $global-spacing-primary;
   }
 
 }

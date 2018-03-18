@@ -17,5 +17,12 @@
 
   & + & { margin-left: $global-spacing-primary; }
 
+  &--white {
+    background: $colour-white;
+    color: $colour-black-text;
+
+    &:hover { background: rgba($colour-white, .9); }
+  }
+
 }
 

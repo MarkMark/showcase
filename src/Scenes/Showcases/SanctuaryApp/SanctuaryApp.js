@@ -20,93 +20,64 @@ class SanctuaryApp extends Component {
 
         <div className="o-wrapper">
 
-          <h3>Overview</h3>
+          <h3 className="u-text-align--center">Overview</h3>
 
+          <div className="o-layout u-margin-bottom-large">
+            <div className="o-layout__item u-1/1">
+
+              <p>Let's say you work as a fire warden for a medium to large company and there's a fire. Amidst the panic, you forget the roll call. Now you don't know if all the employees got out safely and you need to inform the fire department. How about if you work in HR and there's been an attack on the subway, how are you meant to know if all the employees are okay?</p>
+
+            </div>
+
+            <Linebreak />
+
+          </div>
+        </div>
+
+
+        <div className="o-wrapper">
           <div className="o-layout u-margin-bottom-large">
 
             <div className="o-layout__item u-1/1 u-1/2@tablet">
-              <h4>About the Project</h4>
+              <h3 className="u-text-align--center">The problem</h3>
 
-              <p>Sanctuary is a new way of making sure all your employees are safe by sending push notifications to your employees and getting a real-time response back.</p>
+              <p>Roll calls are outdated. Having a sheet of paper which could have thousands of names on it, getting all the employees to congregate in a certain area and then trying to figure out if the missing employees are sick or out of office at a business meeting. What a nightmare.</p>
             </div>
 
             <div className="o-layout__item u-1/1 u-1/2@tablet">
-              <h4>My Role</h4>
+              <h3 className="u-text-align--center">The solution</h3>
 
-              <p>Sanctuary is mine and my business partners company, I handle everything development & design related, which includes;</p>
+              <p>At Sanctuary we've simplified this experience. Each employee has a profile, which takes around 2 minutes to create. Now if there is a fire, with one step you can send a push notification to everyone. All your employees need to do is mark themselves either as safe or not safe. By doing this you can get a real-time response from all of the employee's whether they're in the office or not.</p>
+
+            </div>
+          </div>
+
+          <Linebreak />
+        </div>
+
+
+
+        <div className="o-wrapper">
+          <h3 className="u-text-align--center">Key features</h3>
+
+          <div className="o-layout u-margin-bottom-large">
+            <div className="o-layout__item u-1/1">
 
               <ol>
-                  <li>Planning and designing the UI & UX for the app</li>
-                  <li>Investigating and exploration of the best frameworks</li>
-                  <li>Development of the app</li>
-                  <li>Future planning of features </li>
+                <li><b>Push Notifications.</b> Due to the possibility that employees may be out of the office, we need to alert them that an active event has been triggered.</li>
+                <li><b>Custom Events.</b> Sanctuary has a preset of 3 events which are Fire, Flood & an Act of Terror. However, you can create a fully customisable event.</li>
+                <li><b>Real-Time Response.</b> Whilst there is an active event you can view your complete employee list. Next to each users name is an indication of if the employee is safe, unsafe or has not yet responded. There's also a counter at the top of the page for a full overview.</li>
               </ol>
-            </div>
 
+            </div>
           </div>
         </div>
-
-
-        <Linebreak />
-
 
         <div className="o-wrapper">
-
-          <h3>Process, Insight & Solution</h3>
-
-          <div className="o-layout u-margin-bottom-large">
-            <div className="o-layout__item u-1/1">
-              <h4>Project background</h4>
-
-              <p>The idea for Sanctuary came out a necessity of the modern world. After the recent terrorist attacks that have happened in London & the rest of Europe, we wanted a way to find out if our work colleagues were okay. Unfortunately, we don't all have a way to contact each other & our managers struggled to contact everyone. So myself and my partner sat down and figured out a simple but effective way for a business to find out all of their employee's statuses in case of an emergency.</p>
-
-            </div>
-          </div>
-
-          <div className="o-layout u-margin-bottom-large">
-            <div className="o-layout__item u-1/1">
-              <h4>The problem</h4>
-
-              <p>Due to the nature of the app, it needs to work at a moments notice. We can’t deal with having slow servers or notifications not coming through when it’s most needed.</p>
-
-            </div>
-          </div>
-
-          <div className="o-layout u-margin-bottom-large">
-            <div className="o-layout__item u-1/1">
-              <h4>Framework</h4>
-
-              <p>I chose to use React Native to build the app. What really sets React Native apart from the competition is that the app is built as a native application.</p>
-
-            </div>
-          </div>
-
-        </div>
-
-
-        <Linebreak />
-
-
-        <div className="o-wrapper">
-
-          <h3>The results</h3>
-
-          <div className="o-layout u-margin-bottom-large">
-
-            <div className="o-layout__item u-1/1">
-
-              <p>So far we're currently in beta testing & are in conversations with some big clients. We're always coming up with new features and improvements that we can include so watch this space.</p>
-
-            </div>
-
+          <div className="o-layout u-text-align--center">
+            <img src={ShowcasesPNG_phone} alt="Sanctuary on mobile" />
           </div>
         </div>
-
-
-        <div className="o-wrapper u-text-align--center">
-          <img src={ShowcasesPNG_phone} alt="cooltrax app settings" />
-        </div>
-
 
       </section>
 
