@@ -5,6 +5,7 @@ import Hero                 from './Components/Hero'
 import Linebreak            from '../../../Components/Linebreak/Linebreak'
 
 
+import ShowcasesWEBP_phone  from '../../../img/showcase/sanctuary-app/white-phone-right.webp'
 import ShowcasesPNG_phone   from '../../../img/showcase/sanctuary-app/white-phone-right.png'
 
 
@@ -83,7 +84,14 @@ class SanctuaryApp extends Component {
         <div className="o-wrapper">
           <div className="o-layout u-text-align--center">
             <div className="o-layout__item u-1/1">
-              <img src={ShowcasesPNG_phone} alt="Sanctuary on mobile" />
+
+              <img
+                ref={img => this.img = img}
+                src={ShowcasesWEBP_phone}
+                onError={() => this.img.src = ShowcasesPNG_phone}
+                alt="Sanctuary's app on mobile"
+              />
+
             </div>
           </div>
         </div>

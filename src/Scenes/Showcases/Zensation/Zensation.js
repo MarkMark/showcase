@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import { Helmet }           from 'react-helmet'
+import React, { Component }  from 'react';
+import { Helmet }            from 'react-helmet'
 
-import Hero                 from './Components/Hero'
-import Linebreak            from '../../../Components/Linebreak/Linebreak'
+import Hero                  from './Components/Hero'
+import Linebreak             from '../../../Components/Linebreak/Linebreak'
 
-import ShowcasesPNG_devices from '../../../img/showcase/zensation/showcase-responsive-2.png'
-import ShowcasesPNG_mac     from '../../../img/showcase/zensation/showcase-mac.png'
+import ShowcasesPNG_devices  from '../../../img/showcase/zensation/showcase-responsive-2.png'
+import ShowcasesPNG_mac      from '../../../img/showcase/zensation/showcase-mac.png'
+import ShowcasesWEBP_devices from '../../../img/showcase/zensation/showcase-responsive-2.webp'
+import ShowcasesWEBP_mac     from '../../../img/showcase/zensation/showcase-mac.webp'
 
 class Zensation extends Component {
 
@@ -64,7 +66,14 @@ class Zensation extends Component {
 
         <div className="u-border--bottom u-margin-bottom-large">
           <div className="o-wrapper u-text-align--center">
-            <img src={ShowcasesPNG_devices} alt="Zensation devices" />
+
+            <img
+              ref={img => this.img = img}
+              src={ShowcasesWEBP_devices}
+              onError={() => this.img.src = ShowcasesPNG_devices}
+              alt="Zensation homepage on devices"
+            />
+
           </div>
         </div>
 
@@ -143,7 +152,14 @@ class Zensation extends Component {
         </div>
 
         <div className="o-wrapper u-text-align--center">
-          <img src={ShowcasesPNG_mac} alt="Zensation mac" />
+
+          <img
+            ref={img => this.img = img}
+            src={ShowcasesWEBP_mac}
+            onError={() => this.img.src = ShowcasesPNG_mac}
+            alt="Zensation homepage on macBook"
+          />
+
         </div>
 
 

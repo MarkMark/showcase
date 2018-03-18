@@ -6,6 +6,8 @@ import Linebreak            from '../../../Components/Linebreak/Linebreak'
 
 import ShowcasesPNG_hand    from '../../../img/showcase/runaway-pets/runaway-pets-hand.png'
 import ShowcasesPNG_mobile  from '../../../img/showcase/runaway-pets/runaway-pets-mobile-3d.png'
+import ShowcasesWEBP_hand   from '../../../img/showcase/runaway-pets/runaway-pets-hand.webp'
+import ShowcasesWEBP_mobile from '../../../img/showcase/runaway-pets/runaway-pets-mobile-3d.webp'
 // import ShowcasesPNG_notifi  from '../../../img/showcase/runaway-pets/runaway-pets-notification.png'
 
 
@@ -82,7 +84,14 @@ class Runaway extends Component {
 
           <div className="o-layout u-text-align--center">
             <div className="o-layout__item u-1/1">
-              <img src={ShowcasesPNG_mobile} alt="Runaway pets mobile" />
+
+              <img
+                ref={img => this.img = img}
+                src={ShowcasesWEBP_mobile}
+                onError={() => this.img.src = ShowcasesPNG_mobile}
+                alt="Runaway pets mobile"
+              />
+
             </div>
           </div>
 
@@ -213,7 +222,13 @@ class Runaway extends Component {
 
 
         <div className="o-wrapper u-text-align--center">
-          <img src={ShowcasesPNG_hand} alt="Runaway pets mobile" />
+
+          <img
+            ref={img => this.img = img}
+            src={ShowcasesWEBP_hand}
+            onError={() => this.img.src = ShowcasesPNG_hand}
+            alt="Runaway pets mobile"
+          />
         </div>
 
       </section>

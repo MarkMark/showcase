@@ -5,6 +5,7 @@ import Hero                 from './Components/Hero'
 import Linebreak            from '../../../Components/Linebreak/Linebreak'
 
 
+import ShowcasesWEBP_dash  from '../../../img/showcase/sanctuary/laptop-dashboard.webp'
 import ShowcasesPNG_dash   from '../../../img/showcase/sanctuary/laptop-dashboard.png'
 
 
@@ -83,7 +84,12 @@ class Sanctuary extends Component {
         <div className="o-wrapper">
           <div className="o-layout u-text-align--center">
             <div className="o-layout__item u-1/1">
-              <img src={ShowcasesPNG_dash} alt="Sanctuary dashboard" />
+              <img
+                ref={img => this.img = img}
+                src={ShowcasesWEBP_dash}
+                onError={() => this.img.src = ShowcasesPNG_dash}
+                alt="Sanctuary dashboard"
+              />
             </div>
           </div>
         </div>

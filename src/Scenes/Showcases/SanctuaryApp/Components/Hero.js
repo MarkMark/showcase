@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import WEBPsanctuaryApp     from '../../../../img/showcase/sanctuary-app/mobiles.webp'
 import PNGsanctuaryApp      from '../../../../img/showcase/sanctuary-app/mobiles.png'
 
 
@@ -24,7 +26,13 @@ class Hero extends Component {
               </a>
             </div>
 
-            <img src={PNGsanctuaryApp} alt="Sanctuary apps" />
+            <img
+              ref={img => this.img = img}
+              src={WEBPsanctuaryApp}
+              onError={() => this.img.src = PNGsanctuaryApp}
+              alt="Sanctuary's app screens"
+            />
+
           </div>
 
         </div>

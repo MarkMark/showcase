@@ -1,13 +1,16 @@
-import React, { Component }    from 'react';
-import { Helmet }           from 'react-helmet'
+import React, { Component }     from 'react';
+import { Helmet }               from 'react-helmet'
 
-import Hero                    from './Components/Hero'
-import Linebreak               from '../../../Components/Linebreak/Linebreak'
+import Hero                     from './Components/Hero'
+import Linebreak                from '../../../Components/Linebreak/Linebreak'
 
 
-import ShowcasesPNG_mac        from '../../../img/showcase/mendr/showcase-mac-mendr.png'
-import ShowcasesPNG_macbook    from '../../../img/showcase/mendr/showcase-macbook-mendr.png'
-import ShowcasesPNG_responsive from '../../../img/showcase/mendr/showcase-responsive-full.png'
+import ShowcasesPNG_mac         from '../../../img/showcase/mendr/showcase-mac-mendr.png'
+import ShowcasesPNG_macbook     from '../../../img/showcase/mendr/showcase-macbook-mendr.png'
+import ShowcasesPNG_responsive  from '../../../img/showcase/mendr/showcase-responsive-full.png'
+import ShowcasesWEBP_mac        from '../../../img/showcase/mendr/showcase-mac-mendr.webp'
+import ShowcasesWEBP_macbook    from '../../../img/showcase/mendr/showcase-macbook-mendr.webp'
+import ShowcasesWEBP_responsive from '../../../img/showcase/mendr/showcase-responsive-full.webp'
 
 
 class Mendr extends Component {
@@ -90,7 +93,14 @@ class Mendr extends Component {
 
           <div className="o-layout u-margin-bottom-large u-text-align--center">
             <div className="o-layout__item u-1/1">
-              <img src={ShowcasesPNG_macbook} alt="Mendr macbook" />
+
+              <img
+                ref={img => this.img = img}
+                src={ShowcasesWEBP_macbook}
+                onError={() => this.img.src = ShowcasesPNG_macbook}
+                alt="Mendr code on a macbook"
+              />
+
             </div>
           </div>
         </div>
@@ -114,7 +124,14 @@ class Mendr extends Component {
 
           <div className="o-layout u-margin-bottom-large u-text-align--center">
             <div className="o-layout__item u-1/1">
-              <img src={ShowcasesPNG_responsive} alt="Mendr macbook" />
+
+              <img
+                ref={img => this.img = img}
+                src={ShowcasesWEBP_responsive}
+                onError={() => this.img.src = ShowcasesPNG_responsive}
+                alt="Mendr homepage on devies"
+              />
+
             </div>
           </div>
 
@@ -226,7 +243,14 @@ class Mendr extends Component {
 
           <div className="o-layout u-text-align--center">
             <div className="o-layout__item u-1/1">
-              <img src={ShowcasesPNG_mac} alt="Mendr macbook" />
+
+              <img
+                ref={img => this.img = img}
+                src={ShowcasesWEBP_mac}
+                onError={() => this.img.src = ShowcasesPNG_mac}
+                alt="Mendr homepage on mac"
+              />
+
             </div>
           </div>
 

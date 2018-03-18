@@ -5,6 +5,7 @@ import Hero                 from './Components/Hero'
 import Linebreak            from '../../../Components/Linebreak/Linebreak'
 
 
+import ShowcasesWEBP_hand   from '../../../img/showcase/cooltrax-app/hand-settings.webp'
 import ShowcasesPNG_hand    from '../../../img/showcase/cooltrax-app/hand-settings.png'
 
 
@@ -157,7 +158,14 @@ class Zensation extends Component {
 
 
         <div className="o-wrapper u-text-align--center">
-          <img src={ShowcasesPNG_hand} alt="cooltrax app settings" />
+
+          <img
+            ref={img => this.img = img}
+            src={ShowcasesWEBP_hand}
+            onError={() => this.img.src = ShowcasesPNG_hand}
+            alt="cooltrax app settings"
+          />
+
         </div>
 
 
