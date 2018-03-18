@@ -1,0 +1,9 @@
+
+.u-responsive-hidden {
+
+  &--hide-mobile {
+    display: none;
+
+    @include mq($from: tablet) { display: block; }
+  }
+}
