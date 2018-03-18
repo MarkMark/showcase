@@ -75,7 +75,9 @@ class Sanctuary extends Component {
 
         <div className="o-wrapper">
           <div className="o-layout u-text-align--center">
-            <img src={ShowcasesPNG_dash} alt="Sanctuary dashboard" />
+            <div className="o-layout__item u-1/1">
+              <img src={ShowcasesPNG_dash} alt="Sanctuary dashboard" />
+            </div>
           </div>
         </div>
 

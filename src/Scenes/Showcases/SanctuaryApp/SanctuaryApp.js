@@ -75,7 +75,9 @@ class SanctuaryApp extends Component {
 
         <div className="o-wrapper">
           <div className="o-layout u-text-align--center">
-            <img src={ShowcasesPNG_phone} alt="Sanctuary on mobile" />
+            <div className="o-layout__item u-1/1">
+              <img src={ShowcasesPNG_phone} alt="Sanctuary on mobile" />
+            </div>
           </div>
         </div>
 

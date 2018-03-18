@@ -13,22 +13,44 @@
 
   &--home {
     background-color: $colour-grey-300;
-    background-image: url('./img/heros/hero-homepage-waves.png');
+    background-image: url('./img/heros/hero-homepage-waves.webp');
     background-position: bottom;
     background-width: 100%;
+
+    .no-webp & { background-image: url('./img/heros/hero-homepage-waves.png'); }
   }
 
-  &--zensation     { background-image: url('./img/heros/hero-zensation.jpg'); }
-  &--runaway       { background-image: url('./img/heros/hero-runaway-pets.jpg'); }
-  &--mendr         { background-image: url('./img/heros/hero-mendr.jpg'); }
-  &--cooltrax-app  { background-image: url('./img/heros/hero-cooltrax-app.jpg'); }
+  &--zensation     {
+    background-image: url('./img/heros/hero-zensation.webp');
+
+    .no-webp & { background-image: url('./img/heros/hero-zensation.jpg'); }
+  }
+  &--runaway       {
+    background-image: url('./img/heros/hero-runaway-pets.webp');
+
+    .no-webp & { background-image: url('./img/heros/hero-runaway-pets.jpg'); }
+  }
+  &--mendr         {
+    background-image: url('./img/heros/hero-mendr.webp');
+
+    .no-webp & { background-image: url('./img/heros/hero-mendr.jpg'); }
+  }
+  &--cooltrax-app  {
+    background-image: url('./img/heros/hero-cooltrax-app.webp');
+
+    .no-webp & { background-image: url('./img/heros/hero-cooltrax-app.jpg'); }
+  }
   &--sanctuary-app {
-    background-image: url('./img/heros/hero-sanctuary-app.jpg');
+    background-image: url('./img/heros/hero-sanctuary-app.webp');
     color: $colour-white-text;
+
+    .no-webp & { background-image: url('./img/heros/hero-sanctuary-app.jpg'); }
   }
   &--sanctuary {
-    background-image: url('./img/heros/hero-sanctuary.jpg');
+    background-image: url('./img/heros/hero-sanctuary.webp');
     color: $colour-white-text;
+
+    .no-webp & { background-image: url('./img/heros/hero-sanctuary.jpg'); }
   }
 
   .o-wrapper { width: 100%; }
