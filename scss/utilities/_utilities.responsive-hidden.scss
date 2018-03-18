@@ -5,5 +5,15 @@
     display: none;
 
     @include mq($from: tablet) { display: block; }
+
+    &--inline { @include mq($from: tablet) { display: inline; } }
+  }
+
+  &--show-mobile {
+    display: block;
+
+    &--inline { display: inline; }
+
+    @include mq($from: tablet) { display: none; }
   }
 }
