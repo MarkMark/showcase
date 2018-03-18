@@ -42,7 +42,7 @@ class Clients extends Component {
         <div className="u-text-align--center">
           <p>Interested in working with me?</p>
 
-          <NavLink className="c-button" to="/showcase">
+          <NavLink className="c-button" to="/contact">
             Contact me
           </NavLink>
         </div>
