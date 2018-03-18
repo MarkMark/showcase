@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet }           from 'react-helmet'
 
 
 class Contact extends Component {
@@ -8,6 +9,12 @@ class Contact extends Component {
     return (
 
       <section className="u-padding-top-large">
+
+        <Helmet>
+          <title>Contact me</title>
+          <meta name="description" content="Want to get in touch?" />
+        </Helmet>
+
 
         <div className="o-wrapper u-max-width--500">
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet }           from 'react-helmet'
 
 import Preview              from '../../Components/Preview/Preview'
 
@@ -28,6 +29,14 @@ class Showcase extends Component {
     return (
 
       <section className="u-padding-top-large">
+
+
+        <Helmet>
+          <title>Showcase</title>
+          <meta name="description" content="View my past work" />
+        </Helmet>
+
+
 
         <div className="o-wrapper">
 

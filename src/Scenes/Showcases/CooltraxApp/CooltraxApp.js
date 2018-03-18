@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Helmet }           from 'react-helmet'
+
 import Hero                 from './Components/Hero'
 import Linebreak            from '../../../Components/Linebreak/Linebreak'
 
@@ -13,6 +15,11 @@ class Zensation extends Component {
     return (
 
       <section>
+
+        <Helmet>
+          <title>Cooltrax's App showcase</title>
+          <meta name="description" content="Take a look at my work with Cooltrax" />
+        </Helmet>
 
 
         <Hero />
