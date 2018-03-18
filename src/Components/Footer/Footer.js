@@ -9,7 +9,7 @@ class Footer extends Component {
 
       <footer className="c-footer">
         <div className="o-wrapper">
-          <p>Created by Mark</p>
+          <p>Created by Mark - © { new Date().getFullYear() }</p>
         </div>
       </footer>
 
