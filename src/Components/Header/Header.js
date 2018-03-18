@@ -1,10 +1,21 @@
 import React, { Component } from 'react'
-import { NavLink }          from 'react-router-dom';
+import { NavLink }          from 'react-router-dom'
+import classNames           from 'classnames'
 
 
 class Header extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      navActive: false
+    };
+  }
+
   render() {
+
+    let { navActive } = this.state
 
     return (
 
@@ -15,7 +26,11 @@ class Header extends Component {
             <span>M</span>
           </NavLink>
 
-          <nav>
+          <i className="o-icon--menu c-header__icon" onClick={ () => this.setState({ navActive: !navActive }) }></i>
+
+          <nav className={classNames(
+            { 'active': navActive }
+          )}>
             <ul>
               <li><NavLink to="/showcase">Showcase</NavLink></li>
               <li><NavLink to="/about">About</NavLink></li>

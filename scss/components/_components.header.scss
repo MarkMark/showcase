@@ -1,6 +1,10 @@
 
 .c-header {
+  background: $colour-white;
   border-bottom: 1px solid $colour-black-dividers;
+  padding: $global-spacing-tertiary 0;
+
+  @include mq($from: tablet) { padding: 0; }
 
   .o-wrapper { position: relative; }
 
@@ -36,16 +40,57 @@
   }
 
 
+  &__icon {
+    bottom: 0;
+    cursor: pointer;
+    height: 32px;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: $global-spacing-secondary;
+    position: absolute;
+    right: $global-spacing-primary;
+    top: 0;
+    width: 32px;
+
+    @include mq($from: tablet) { display: none; }
+  }
+
+
   nav {
+    background: $colour-white;
+    box-shadow: 0 1px 1px -1px rgba($colour-black, .9);
+    display: none;
+    position: absolute;
+    right: -100%;
     text-align: right;
+    top: 32px;
+    transition: right .2s linear;
+    width: 100%;
+    z-index: 9;
+
+    &.active {
+      display: block;
+      right: 0;
+    }
+
+    @include mq($from: tablet) {
+      background: none;
+      box-shadow: none;
+      display: inline-block;
+      position: static;
+    }
   }
 
   li,
   ul {
-    display: inline-block;
+    display: block;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @include mq($from: tablet) {
+      display: inline-block;
+    }
   }
 
   // li { display: inline-block; }
@@ -54,14 +99,23 @@
     color: $colour-black-text;
     display: block;
     font-weight: $global-font-light;
-    padding: $global-spacing-quaternary $global-spacing-primary;
+    padding: $global-spacing-primary;
     position: relative;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     text-transform: uppercase;
 
+    @include mq($from: tablet) {
+      padding: $global-spacing-quaternary $global-spacing-primary;
+      text-align: center;
+    }
+
     &:hover {
-      &::after { background: $colour-black-text; }
+      &::after {
+        @include mq($from: tablet) {
+          background: $colour-black-text;
+        }
+      }
     }
 
     &::after {
