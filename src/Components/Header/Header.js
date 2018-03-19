@@ -47,16 +47,16 @@ class Header extends Component {
             <span>M</span>
           </NavLink>
 
-          <i className="o-icon--menu c-header__icon" onClick={ () => this.triggerNav('open') }></i>
+          <i className="o-icon--menu c-header__icon" onClick={ () => this.triggerNav() }></i>
 
           <nav className={classNames(
             { 'active'  : navActive },
             { 'animate' : navAnimate }
           )}>
             <ul>
-              <li><NavLink to="/showcase" onClick={ () => this.triggerNav('open') }>Showcase</NavLink></li>
-              <li><NavLink to="/about" onClick={ () => this.triggerNav('open') }>About</NavLink></li>
-              <li><NavLink to="/contact" onClick={ () => this.triggerNav('open') }>Contact</NavLink></li>
+              <li><NavLink to="/showcase" onClick={ () => this.triggerNav() }>Showcase</NavLink></li>
+              <li><NavLink to="/about" onClick={ () => this.triggerNav() }>About</NavLink></li>
+              <li><NavLink to="/contact" onClick={ () => this.triggerNav() }>Contact</NavLink></li>
             </ul>
           </nav>
 
