@@ -28,6 +28,7 @@
   }
   &--zensation {
     background-image: url('./img/heros/hero-zensation.webp');
+    color: $colour-white-text;
 
     .no-webp & { background-image: url('./img/heros/hero-zensation.jpg'); }
   }
