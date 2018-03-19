@@ -9,13 +9,34 @@ class Header extends Component {
     super(props);
 
     this.state = {
-      navActive: false
+      navActive  : false,
+      navAnimate : false
     };
+  }
+
+
+  triggerNav () {
+    let { navActive, navAnimate } = this.state
+
+    if ( !navActive ) {
+      this.setState({ navActive: !navActive })
+
+      setTimeout(() => {
+        this.setState({ navAnimate: !navAnimate })
+      }, 60)
+
+    } else {
+      this.setState({ navAnimate: !navAnimate })
+
+      setTimeout(() => {
+        this.setState({ navActive: !navActive })
+      }, 60)
+    }
   }
 
   render() {
 
-    let { navActive } = this.state
+    let { navActive, navAnimate } = this.state
 
     return (
 
@@ -26,15 +47,16 @@ class Header extends Component {
             <span>M</span>
           </NavLink>
 
-          <i className="o-icon--menu c-header__icon" onClick={ () => this.setState({ navActive: !navActive }) }></i>
+          <i className="o-icon--menu c-header__icon" onClick={ () => this.triggerNav('open') }></i>
 
           <nav className={classNames(
-            { 'active': navActive }
+            { 'active'  : navActive },
+            { 'animate' : navAnimate }
           )}>
             <ul>
-              <li><NavLink to="/showcase">Showcase</NavLink></li>
-              <li><NavLink to="/about">About</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
+              <li><NavLink to="/showcase" onClick={ () => this.triggerNav('open') }>Showcase</NavLink></li>
+              <li><NavLink to="/about" onClick={ () => this.triggerNav('open') }>About</NavLink></li>
+              <li><NavLink to="/contact" onClick={ () => this.triggerNav('open') }>Contact</NavLink></li>
             </ul>
           </nav>
 

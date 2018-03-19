@@ -68,10 +68,8 @@
     width: 100%;
     z-index: 9;
 
-    &.active {
-      display: block;
-      right: 0;
-    }
+    &.active { display: block; }
+    &.animate { right: 0; }
 
     @include mq($from: tablet) {
       background: none;
