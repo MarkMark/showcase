@@ -1,6 +1,7 @@
 import React, { Component }  from 'react';
 import { Helmet }            from 'react-helmet'
 
+import Hero                  from './Components/Hero'
 import Preview               from '../../Components/Preview/Preview'
 
 import ThumbJPG_zensation     from '../../img/thumbs/zensation.jpg'
@@ -43,7 +44,7 @@ class Showcase extends Component {
 
     return (
 
-      <section className="u-padding-top-large">
+      <section>
 
 
         <Helmet>
@@ -51,6 +52,8 @@ class Showcase extends Component {
           <meta name="description" content="View my past work" />
         </Helmet>
 
+
+        <Hero />
 
 
         <div className="o-wrapper">

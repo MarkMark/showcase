@@ -20,22 +20,28 @@
     .no-webp & { background-image: url('./img/heros/hero-homepage-waves.png'); }
   }
 
-  &--zensation     {
+  &--showcase {
+    background-image: url('./img/heros/hero-sanctuary.webp');
+    color: $colour-white-text;
+
+    .no-webp & { background-image: url('./img/heros/hero-sanctuary.jpg'); }
+  }
+  &--zensation {
     background-image: url('./img/heros/hero-zensation.webp');
 
     .no-webp & { background-image: url('./img/heros/hero-zensation.jpg'); }
   }
-  &--runaway       {
+  &--runaway {
     background-image: url('./img/heros/hero-runaway-pets.webp');
 
     .no-webp & { background-image: url('./img/heros/hero-runaway-pets.jpg'); }
   }
-  &--mendr         {
+  &--mendr {
     background-image: url('./img/heros/hero-mendr.webp');
 
     .no-webp & { background-image: url('./img/heros/hero-mendr.jpg'); }
   }
-  &--cooltrax-app  {
+  &--cooltrax-app {
     background-image: url('./img/heros/hero-cooltrax-app.webp');
 
     .no-webp & { background-image: url('./img/heros/hero-cooltrax-app.jpg'); }
