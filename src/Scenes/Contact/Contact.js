@@ -23,9 +23,11 @@ class Contact extends Component {
           <div className="o-layout">
             <div className="o-layout__item u-1/1 u-text-align--center">
 
+              <p>I really enjoy helping business & start-ups build great websites, web apps & mobile applications.</p>
+
               <p>Interested in working with me?</p>
 
-              <p>You can contact me <a href="mailto:markschwanethal@gmail.com" target="_blank" rel="noopener noreferrer">here</a>.</p>
+              <a href="mailto:markschwanethal@gmail.com" className="c-button" target="_blank" rel="noopener noreferrer">Contact me</a>
 
             </div>
           </div>
