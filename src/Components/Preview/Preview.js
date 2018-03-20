@@ -18,7 +18,7 @@ class Preview extends Component {
     return (
 
       <div className="o-layout__item u-1/2 u-1/4@tablet">
-        <NavLink className="c-previews__preview" to={`showcase/${company.toLowerCase().replace(' ', '-')}`}>
+        <NavLink className="c-previews__preview" to={`showcase/${company.toLowerCase().replace(/\s/g, '-')}`}>
           <div className="c-previews__preview__screenshot">
 
             <div className="c-previews__preview__desc">
