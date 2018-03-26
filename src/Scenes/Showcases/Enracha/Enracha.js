@@ -15,7 +15,7 @@ class Enracha extends Component {
 
     return (
 
-      <section>
+      <section className="u-padding-top">
 
         <Helmet>
           <title>Enracha showcase</title>

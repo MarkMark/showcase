@@ -15,7 +15,7 @@ class KearAndKu extends Component {
 
     return (
 
-      <section>
+      <section className="u-padding-top">
 
         <Helmet>
           <title>Kear & Ku showcase</title>

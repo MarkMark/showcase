@@ -15,7 +15,7 @@ class Jetstar extends Component {
 
     return (
 
-      <section>
+      <section className="u-padding-top">
 
         <Helmet>
           <title>Jetstar showcase</title>

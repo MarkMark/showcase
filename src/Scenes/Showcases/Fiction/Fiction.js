@@ -15,7 +15,7 @@ class Fiction extends Component {
 
     return (
 
-      <section>
+      <section className="u-padding-top">
 
         <Helmet>
           <title>Fiction showcase</title>

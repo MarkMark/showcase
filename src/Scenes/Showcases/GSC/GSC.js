@@ -15,7 +15,7 @@ class GSC extends Component {
 
     return (
 
-      <section>
+      <section className="u-padding-top">
 
         <Helmet>
           <title>GSC showcase</title>

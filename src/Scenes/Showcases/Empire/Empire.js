@@ -15,7 +15,7 @@ class Empire extends Component {
 
     return (
 
-      <section>
+      <section className="u-padding-top">
 
         <Helmet>
           <title>Empire showcase</title>

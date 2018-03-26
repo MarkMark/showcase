@@ -9,13 +9,13 @@ import Linebreak            from '../../../Components/Linebreak/Linebreak'
 // import ShowcasesPNG_hand    from '../../../img/showcase/cooltrax-app/hand-settings.png'
 
 
-class Zensation extends Component {
+class Caltex extends Component {
 
   render() {
 
     return (
 
-      <section>
+      <section className="u-padding-top">
 
         <Helmet>
           <title>Caltex's showcase</title>
@@ -38,4 +38,4 @@ class Zensation extends Component {
 
 }
 
-export default Zensation;
+export default Caltex;

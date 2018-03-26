@@ -15,7 +15,7 @@ class Cooltrax extends Component {
 
     return (
 
-      <section>
+      <section className="u-padding-top">
 
         <Helmet>
           <title>Cooltrax showcase</title>
