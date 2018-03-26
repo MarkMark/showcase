@@ -22,9 +22,9 @@ class Previews extends Component {
 
         <div className="o-layout c-previews">
 
-          <Preview src={ThumbJPG_sanctuary} company={'Sanctuary'} desc={`Sanctuary is a new way of making sure all your employees are safe by sending push notifications to your employees and getting a real-time response back.`} />
-
           <Preview src={ThumbJPG_sanctuaryApp} company={'Sanctuary app'} desc={`Sanctuary is a new way of making sure all your employees are safe by sending push notifications to your employees and getting a real-time response back.`} />
+
+          <Preview src={ThumbJPG_sanctuary} company={'Sanctuary'} desc={`Sanctuary is a new way of making sure all your employees are safe by sending push notifications to your employees and getting a real-time response back.`} />
 
           <Preview src={ThumbJPG_zensation} company={'Zensation'} desc={`Zensation is a popular Tea House in Redfern, Sydney. Echoing the stylings of a 1920s Shanghai Tea House. It's a truly unique experience to sit down relax and try the best tea in Australia while eating some delicious Yum Cha!`} />
 
