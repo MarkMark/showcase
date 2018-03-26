@@ -9,7 +9,7 @@ import Linebreak            from '../../../Components/Linebreak/Linebreak'
 // import ShowcasesPNG_hand    from '../../../img/showcase/cooltrax-app/hand-settings.png'
 
 
-class Zensation extends Component {
+class Betfair extends Component {
 
   render() {
 
@@ -40,4 +40,4 @@ class Zensation extends Component {
 
 }
 
-export default Zensation;
+export default Betfair;
