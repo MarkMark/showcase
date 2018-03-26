@@ -6,10 +6,11 @@
   background-size: cover;
   display: flex;
   margin-bottom: $global-spacing-quaternary;
-  min-height: 400px;
   padding-top: $global-spacing-tertiary;
   position: relative;
   text-align: center;
+
+  @include mq($from: tablet) { min-height: 400px; }
 
   &--home {
     background-color: $colour-grey-300;
