@@ -11,8 +11,11 @@
     text-decoration: none;
 
     p {
-      margin: 0;
       color: $colour-black-secondary-text;
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     &__desc {
@@ -29,10 +32,18 @@
       transition: opacity .2s linear;
       z-index: 99;
 
-      h4 { margin-bottom: $global-spacing-secondary; }
+      h4 {
+        color: $colour-black-text;
+        margin-bottom: $global-spacing-secondary;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
 
-      h4,
-      p { color: $colour-black-text; }
+      p {
+        color: $colour-black-text;
+        white-space: normal;
+      }
     }
 
     &:hover {
