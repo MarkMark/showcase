@@ -21,6 +21,12 @@
     .no-webp & { background-image: url('./img/heros/hero-homepage-waves.png'); }
   }
 
+  &--amp {
+    background-image: url('./img/heros/hero-sanctuary.webp');
+    color: $colour-white-text;
+
+    .no-webp & { background-image: url('./img/heros/hero-sanctuary.jpg'); }
+  }
   &--showcase {
     background-image: url('./img/heros/hero-sanctuary.webp');
     color: $colour-white-text;
