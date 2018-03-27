@@ -6,7 +6,7 @@ import Preview               from '../../Components/Preview/Preview'
 
 import ThumbJPG_zensation     from '../../img/thumbs/zensation.jpg'
 import ThumbJPG_amp           from '../../img/thumbs/amp.jpg'
-import ThumbJPG_caltex        from '../../img/thumbs/caltex.jpg'
+// import ThumbJPG_caltex        from '../../img/thumbs/caltex.jpg'
 import ThumbJPG_runaway       from '../../img/thumbs/runaway-pets.jpg'
 import ThumbJPG_mendr         from '../../img/thumbs/mendr.jpg'
 import ThumbJPG_cooltraxApp   from '../../img/thumbs/cooltrax-app.jpg'
@@ -24,7 +24,7 @@ import ThumbJPG_moneyGaming   from '../../img/thumbs/money-gaming.jpg'
 import ThumbJPG_tchoi         from '../../img/thumbs/tchoidesign.jpg'
 import ThumbWEBP_zensation    from '../../img/thumbs/zensation.webp'
 import ThumbWEBP_amp          from '../../img/thumbs/amp.webp'
-import ThumbWEBP_caltex       from '../../img/thumbs/caltex.webp'
+// import ThumbWEBP_caltex       from '../../img/thumbs/caltex.webp'
 import ThumbWEBP_runaway      from '../../img/thumbs/runaway-pets.webp'
 import ThumbWEBP_mendr        from '../../img/thumbs/mendr.webp'
 import ThumbWEBP_cooltraxApp  from '../../img/thumbs/cooltrax-app.webp'
@@ -72,7 +72,9 @@ class Showcase extends Component {
 
             <Preview src={ThumbWEBP_amp} srcFallback={ThumbJPG_amp} company={'AMP'} desc={`AMP Capital is Australias largest retail and corporate pension providers & own around 30 shopping malls across Australia & New Zealand`} />
 
-            <Preview src={ThumbWEBP_caltex} srcFallback={ThumbJPG_caltex} company={'Caltex'} desc={`Caltex is a business that’s proudly Australian owned. As one of Australia’s largest companies, their passionate about job creation, increasing productivity and creating more opportunities for Australians.`} />
+            { /*
+              <Preview src={ThumbWEBP_caltex} srcFallback={ThumbJPG_caltex} company={'Caltex'} desc={`Caltex is a business that’s proudly Australian owned. As one of Australia’s largest companies, their passionate about job creation, increasing productivity and creating more opportunities for Australians.`} />
+            */ }
 
             <Preview src={ThumbWEBP_zensation} srcFallback={ThumbJPG_zensation} company={'Zensation'} desc={`Zensation is a popular Tea House in Redfern, Sydney. Echoing the stylings of a 1920s Shanghai Tea House. It's a truly unique experience to sit down relax and try the best tea in Australia while eating some delicious Yum Cha!`} />
 
