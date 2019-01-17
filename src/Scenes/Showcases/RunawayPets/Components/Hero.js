@@ -1,23 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-class Hero extends Component {
+function Hero() {
+  return (
+    <div className="c-hero c-hero--runaway">
 
-  render() {
+      <div className="o-wrapper">
+        <h1><span>Runaway Pets</span></h1>
+      </div>
 
-    return (
-
-        <div className="c-hero c-hero--runaway">
-
-          <div className="o-wrapper">
-            <h1><span>Runaway Pets</span></h1>
-          </div>
-
-        </div>
-
-    )
-
-  }
-
+    </div>
+  )
 }
 
-export default Hero;
+export default Hero

@@ -1,67 +1,59 @@
-import React, { Component }  from 'react';
-import { Helmet }            from 'react-helmet'
+import React, { Component } from 'react';
+import { Helmet } from 'react-helmet'
 
-import Hero                  from './Components/Hero'
-import Preview               from '../../Components/Preview/Preview'
+import Hero from './Components/Hero'
+import Preview from '../../Components/Preview/Preview'
 
-import ThumbJPG_zensation     from '../../img/thumbs/zensation.jpg'
-import ThumbJPG_amp           from '../../img/thumbs/amp.jpg'
-// import ThumbJPG_caltex        from '../../img/thumbs/caltex.jpg'
-import ThumbJPG_runaway       from '../../img/thumbs/runaway-pets.jpg'
-import ThumbJPG_mendr         from '../../img/thumbs/mendr.jpg'
-import ThumbJPG_cooltraxApp   from '../../img/thumbs/cooltrax-app.jpg'
-import ThumbJPG_sanctuaryApp  from '../../img/thumbs/sanctuary-app.jpg'
-import ThumbJPG_sanctuary     from '../../img/thumbs/sanctuary.jpg'
-import ThumbJPG_cooltrax      from '../../img/thumbs/cooltrax.jpg'
-import ThumbJPG_betfair       from '../../img/thumbs/betfair.jpg'
-import ThumbJPG_empire        from '../../img/thumbs/empire.jpg'
-import ThumbJPG_enracha       from '../../img/thumbs/enracha.jpg'
-import ThumbJPG_fiction       from '../../img/thumbs/fiction-candy.jpg'
-import ThumbJPG_foxwoods      from '../../img/thumbs/foxwoods.jpg'
-import ThumbJPG_jetstar       from '../../img/thumbs/jetstar.jpg'
-import ThumbJPG_kearandku     from '../../img/thumbs/kear-and-ku.jpg'
-import ThumbJPG_moneyGaming   from '../../img/thumbs/money-gaming.jpg'
-import ThumbJPG_tchoi         from '../../img/thumbs/tchoidesign.jpg'
-import ThumbWEBP_zensation    from '../../img/thumbs/zensation.webp'
-import ThumbWEBP_amp          from '../../img/thumbs/amp.webp'
-// import ThumbWEBP_caltex       from '../../img/thumbs/caltex.webp'
-import ThumbWEBP_runaway      from '../../img/thumbs/runaway-pets.webp'
-import ThumbWEBP_mendr        from '../../img/thumbs/mendr.webp'
-import ThumbWEBP_cooltraxApp  from '../../img/thumbs/cooltrax-app.webp'
+import ThumbJPG_zensation from '../../img/thumbs/zensation.jpg'
+import ThumbJPG_amp from '../../img/thumbs/amp.jpg'
+// import ThumbJPG_caltex from '../../img/thumbs/caltex.jpg'
+import ThumbJPG_runaway from '../../img/thumbs/runaway-pets.jpg'
+import ThumbJPG_mendr from '../../img/thumbs/mendr.jpg'
+import ThumbJPG_cooltraxApp from '../../img/thumbs/cooltrax-app.jpg'
+import ThumbJPG_sanctuaryApp from '../../img/thumbs/sanctuary-app.jpg'
+import ThumbJPG_sanctuary from '../../img/thumbs/sanctuary.jpg'
+import ThumbJPG_cooltrax from '../../img/thumbs/cooltrax.jpg'
+import ThumbJPG_betfair from '../../img/thumbs/betfair.jpg'
+import ThumbJPG_empire from '../../img/thumbs/empire.jpg'
+import ThumbJPG_enracha from '../../img/thumbs/enracha.jpg'
+import ThumbJPG_fiction from '../../img/thumbs/fiction-candy.jpg'
+import ThumbJPG_foxwoods from '../../img/thumbs/foxwoods.jpg'
+import ThumbJPG_jetstar from '../../img/thumbs/jetstar.jpg'
+import ThumbJPG_kearandku from '../../img/thumbs/kear-and-ku.jpg'
+import ThumbJPG_moneyGaming from '../../img/thumbs/money-gaming.jpg'
+import ThumbJPG_tchoi from '../../img/thumbs/tchoidesign.jpg'
+import ThumbWEBP_zensation from '../../img/thumbs/zensation.webp'
+import ThumbWEBP_amp from '../../img/thumbs/amp.webp'
+// import ThumbWEBP_caltex from '../../img/thumbs/caltex.webp'
+import ThumbWEBP_runaway from '../../img/thumbs/runaway-pets.webp'
+import ThumbWEBP_mendr from '../../img/thumbs/mendr.webp'
+import ThumbWEBP_cooltraxApp from '../../img/thumbs/cooltrax-app.webp'
 import ThumbWEBP_sanctuaryApp from '../../img/thumbs/sanctuary-app.webp'
-import ThumbWEBP_sanctuary    from '../../img/thumbs/sanctuary.webp'
-import ThumbWEBP_cooltrax     from '../../img/thumbs/cooltrax.webp'
-import ThumbWEBP_betfair      from '../../img/thumbs/betfair.webp'
-import ThumbWEBP_empire       from '../../img/thumbs/empire.webp'
-import ThumbWEBP_enracha      from '../../img/thumbs/enracha.webp'
-import ThumbWEBP_fiction      from '../../img/thumbs/fiction-candy.webp'
-import ThumbWEBP_foxwoods     from '../../img/thumbs/foxwoods.webp'
-import ThumbWEBP_jetstar      from '../../img/thumbs/jetstar.webp'
-import ThumbWEBP_kearandku    from '../../img/thumbs/kear-and-ku.webp'
-import ThumbWEBP_moneyGaming  from '../../img/thumbs/money-gaming.webp'
-import ThumbWEBP_tchoi        from '../../img/thumbs/tchoidesign.webp'
+import ThumbWEBP_sanctuary from '../../img/thumbs/sanctuary.webp'
+import ThumbWEBP_cooltrax from '../../img/thumbs/cooltrax.webp'
+import ThumbWEBP_betfair from '../../img/thumbs/betfair.webp'
+import ThumbWEBP_empire from '../../img/thumbs/empire.webp'
+import ThumbWEBP_enracha from '../../img/thumbs/enracha.webp'
+import ThumbWEBP_fiction from '../../img/thumbs/fiction-candy.webp'
+import ThumbWEBP_foxwoods from '../../img/thumbs/foxwoods.webp'
+import ThumbWEBP_jetstar from '../../img/thumbs/jetstar.webp'
+import ThumbWEBP_kearandku from '../../img/thumbs/kear-and-ku.webp'
+import ThumbWEBP_moneyGaming from '../../img/thumbs/money-gaming.webp'
+import ThumbWEBP_tchoi from '../../img/thumbs/tchoidesign.webp'
 
 
 class Showcase extends Component {
-
   render() {
-
     return (
-
       <section>
-
-
         <Helmet>
           <title>Showcase</title>
           <meta name="description" content="View my past work" />
         </Helmet>
 
-
         <Hero />
 
-
         <div className="o-wrapper">
-
           <h3>Latest work</h3>
 
           <div className="o-layout c-previews">
@@ -104,18 +96,11 @@ class Showcase extends Component {
             <Preview src={ThumbWEBP_fiction} srcFallback={ThumbJPG_fiction} company={'Fiction candy jewellery'} desc={``} />
 
             <Preview src={ThumbWEBP_kearandku} srcFallback={ThumbJPG_kearandku} company={'Kear and ku'} desc={``} />
-
           </div>
-
         </div>
-
-
       </section>
-
     )
-
   }
-
 }
 
 export default Showcase;

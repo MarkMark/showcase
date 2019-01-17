@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
-import { Helmet }           from 'react-helmet'
+import React, { Component } from 'react'
+import { Helmet } from 'react-helmet'
 
-import Hero                 from './Components/Hero'
-import Linebreak            from '../../../Components/Linebreak/Linebreak'
+import Hero from './Components/Hero'
+import Linebreak from '../../../Components/Linebreak/Linebreak'
 
 
-import ShowcasesWEBP_hand   from '../../../img/showcase/cooltrax-app/hand-settings.webp'
-import ShowcasesPNG_hand    from '../../../img/showcase/cooltrax-app/hand-settings.png'
+import ShowcasesWEBP_hand from '../../../img/showcase/cooltrax-app/hand-settings.webp'
+import ShowcasesPNG_hand from '../../../img/showcase/cooltrax-app/hand-settings.png'
 
 
 class Zensation extends Component {
-
   render() {
-
     return (
-
       <section>
 
         <Helmet>
@@ -22,9 +19,7 @@ class Zensation extends Component {
           <meta name="description" content="Take a look at my work with Cooltrax" />
         </Helmet>
 
-
         <Hero />
-
 
         <div className="o-wrapper">
 
@@ -62,12 +57,9 @@ class Zensation extends Component {
           </div>
         </div>
 
-
         <Linebreak />
 
-
         <div className="o-wrapper">
-
           <h3>Process, Insight & Solution</h3>
 
           <div className="o-layout u-margin-bottom-large">
@@ -130,15 +122,11 @@ class Zensation extends Component {
 
             </div>
           </div>
-
         </div>
-
 
         <Linebreak />
 
-
         <div className="o-wrapper">
-
           <h3>The results</h3>
 
           <div className="o-layout u-margin-bottom-large">
@@ -158,23 +146,16 @@ class Zensation extends Component {
 
 
         <div className="o-wrapper u-text-align--center">
-
           <img
             ref={img => this.img = img}
             src={ShowcasesWEBP_hand}
             onError={() => this.img.src = ShowcasesPNG_hand}
             alt="cooltrax app settings"
           />
-
         </div>
-
-
       </section>
-
     )
-
   }
-
 }
 
 export default Zensation;

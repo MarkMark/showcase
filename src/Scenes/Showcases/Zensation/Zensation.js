@@ -1,32 +1,25 @@
-import React, { Component }  from 'react';
-import { Helmet }            from 'react-helmet'
+import React, { Component } from 'react'
+import { Helmet } from 'react-helmet'
 
-import Hero                  from './Components/Hero'
-import Linebreak             from '../../../Components/Linebreak/Linebreak'
+import Hero from './Components/Hero'
+import Linebreak from '../../../Components/Linebreak/Linebreak'
 
-import ShowcasesPNG_mac      from '../../../img/showcase/zensation/showcase-mac.png'
-import ShowcasesWEBP_mac     from '../../../img/showcase/zensation/showcase-mac.webp'
+import ShowcasesPNG_mac from '../../../img/showcase/zensation/showcase-mac.png'
+import ShowcasesWEBP_mac from '../../../img/showcase/zensation/showcase-mac.webp'
 
 class Zensation extends Component {
-
   render() {
-
     return (
-
       <section>
-
 
         <Helmet>
           <title>Zensation showcase</title>
           <meta name="description" content="Take a look at my work with Zensation" />
         </Helmet>
 
-
         <Hero />
 
-
         <div className="o-wrapper">
-
           <h3 className="u-text-align--center">Overview</h3>
 
           <div className="o-layout u-margin-bottom-large">
@@ -37,11 +30,8 @@ class Zensation extends Component {
             </div>
 
             <Linebreak />
-
           </div>
         </div>
-
-
 
         <div className="o-wrapper">
           <div className="o-layout u-margin-bottom-large">
@@ -63,7 +53,6 @@ class Zensation extends Component {
           <Linebreak />
         </div>
 
-
         <div className="o-wrapper">
           <h3 className="u-text-align--center">Key features</h3>
 
@@ -79,25 +68,17 @@ class Zensation extends Component {
           </div>
         </div>
 
-
         <div className="o-wrapper u-text-align--center">
-
           <img
             ref={img => this.img = img}
             src={ShowcasesWEBP_mac}
             onError={() => this.img.src = ShowcasesPNG_mac}
             alt="Zensation homepage on macBook"
           />
-
         </div>
-
-
       </section>
-
     )
-
   }
-
 }
 
-export default Zensation;
+export default Zensation

@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
-import { Helmet }           from 'react-helmet'
+import React, { Component } from 'react'
+import { Helmet } from 'react-helmet'
 
 
 class Contact extends Component {
-
   render() {
-
     return (
-
       <section className="u-padding-top-large">
 
         <Helmet>
@@ -17,7 +14,6 @@ class Contact extends Component {
 
 
         <div className="o-wrapper u-max-width--500">
-
           <h1 className="u-text-align--center u-margin-bottom-large">Contact me</h1>
 
           <div className="o-layout">
@@ -31,16 +27,10 @@ class Contact extends Component {
 
             </div>
           </div>
-
         </div>
-
-
       </section>
-
     )
-
   }
-
 }
 
 export default Contact;

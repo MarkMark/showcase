@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Helmet }           from 'react-helmet'
-import { NavLink }          from 'react-router-dom';
+import React, { Component } from 'react'
+import { Helmet } from 'react-helmet'
+import { NavLink } from 'react-router-dom'
 
-import WEBPme               from '../../img/misc/mark.webp'
-import PNGme                from '../../img/misc/mark.jpg'
+import WEBPme from '../../img/misc/mark.webp'
+import PNGme from '../../img/misc/mark.jpg'
 
 
 class About extends Component {
@@ -11,7 +11,6 @@ class About extends Component {
   render() {
 
     return (
-
       <section className="u-padding-top-large">
 
         <Helmet>
@@ -58,13 +57,9 @@ class About extends Component {
 
         </div>
 
-
       </section>
-
     )
-
   }
-
 }
 
 export default About;
