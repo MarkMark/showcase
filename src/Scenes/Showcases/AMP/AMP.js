@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { Helmet }           from 'react-helmet'
+import React, { Component } from 'react'
+import { Helmet } from 'react-helmet'
 
-import Hero                 from './Components/Hero'
-import Linebreak            from '../../../Components/Linebreak/Linebreak'
+import Hero from './Components/Hero'
+import Linebreak from '../../../Components/Linebreak/Linebreak'
 
 
 // import ShowcasesWEBP_hand   from '../../../img/showcase/cooltrax-app/hand-settings.webp'
@@ -10,24 +10,17 @@ import Linebreak            from '../../../Components/Linebreak/Linebreak'
 
 
 class AMP extends Component {
-
   render() {
-
     return (
-
       <section>
-
         <Helmet>
           <title>AMP showcase</title>
           <meta name="description" content="Take a look at my work with AMP" />
         </Helmet>
 
-
         <Hero />
 
-
         <div className="o-wrapper">
-
           <h3 className="u-text-align--center">Overview</h3>
 
           <div className="o-layout u-margin-bottom-large">
@@ -78,14 +71,9 @@ class AMP extends Component {
             </div>
           </div>
         </div>
-
-
       </section>
-
     )
-
   }
-
 }
 
 export default AMP;

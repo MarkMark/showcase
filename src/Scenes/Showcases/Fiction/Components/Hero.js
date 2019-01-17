@@ -1,23 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-class Hero extends Component {
+function Hero() {
+  return (
+    <div className="c-hero c-hero--cooltrax-app">
 
-  render() {
+      <div className="o-wrapper">
+        <h1><span>Cooltrax App</span></h1>
+      </div>
 
-    return (
-
-        <div className="c-hero c-hero--cooltrax-app">
-
-          <div className="o-wrapper">
-            <h1><span>Cooltrax App</span></h1>
-          </div>
-
-        </div>
-
-    )
-
-  }
-
+    </div>
+  )
 }
 
-export default Hero;
+export default Hero
