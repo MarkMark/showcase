@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { NavLink }          from 'react-router-dom'
-import classNames           from 'classnames'
+import { NavLink } from 'react-router-dom'
+import classNames from 'classnames'
 
 
 class Header extends Component {
@@ -14,25 +14,24 @@ class Header extends Component {
     };
   }
 
+  // triggerNav () {
+  //   let { navActive, navAnimate } = this.state
 
-  triggerNav () {
-    let { navActive, navAnimate } = this.state
+  //   if ( !navActive ) {
+  //     this.setState({ navActive: !navActive })
 
-    if ( !navActive ) {
-      this.setState({ navActive: !navActive })
+  //     setTimeout(() => {
+  //       this.setState({ navAnimate: !navAnimate })
+  //     }, 60)
 
-      setTimeout(() => {
-        this.setState({ navAnimate: !navAnimate })
-      }, 60)
+  //   } else {
+  //     this.setState({ navAnimate: !navAnimate })
 
-    } else {
-      this.setState({ navAnimate: !navAnimate })
-
-      setTimeout(() => {
-        this.setState({ navActive: !navActive })
-      }, 60)
-    }
-  }
+  //     setTimeout(() => {
+  //       this.setState({ navActive: !navActive })
+  //     }, 60)
+  //   }
+  // }
 
   render() {
 
@@ -41,22 +40,20 @@ class Header extends Component {
     return (
 
       <header className="c-header">
-        <div className="o-wrapper">
+        <div className="c-header__wrapper">
 
           <NavLink to="/" className="c-header__logo">
-            <span>M</span>
+            mshowcase.
           </NavLink>
 
-          <i className="o-icon--menu c-header__icon" onClick={ () => this.triggerNav() }></i>
+          {/* <i className="o-icon--menu c-header__icon" onClick={ () => this.triggerNav() }></i> */}
 
-          <nav className={classNames(
-            { 'active'  : navActive },
-            { 'animate' : navAnimate }
-          )}>
+          <nav className="c-header__nav">
             <ul>
-              <li><NavLink to="/showcase" onClick={ () => this.triggerNav() }>Showcase</NavLink></li>
-              <li><NavLink to="/about" onClick={ () => this.triggerNav() }>About</NavLink></li>
-              <li><NavLink to="/contact" onClick={ () => this.triggerNav() }>Contact</NavLink></li>
+              <li><NavLink to="/">home</NavLink></li>
+              <li><NavLink to="/about">about</NavLink></li>
+              <li><NavLink to="/showcase">showcase</NavLink></li>
+              <li><NavLink to="/contact">contact</NavLink></li>
             </ul>
           </nav>
 
