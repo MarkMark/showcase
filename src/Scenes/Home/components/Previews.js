@@ -39,8 +39,6 @@ function Previews() {
           See more
         </NavLink>
       </div>
-
-      <Linebreak />
     </div>
   )
 }

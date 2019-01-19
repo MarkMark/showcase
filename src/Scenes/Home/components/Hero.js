@@ -1,7 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-
-import Linebreak from '../../../Components/Linebreak/Linebreak'
 
 
 function Hero() {
@@ -18,8 +15,8 @@ function Hero() {
         </div>
 
         <div className="c-hero__social">
-          <a className="icon-github"></a>
-          <a className="icon-linkedin"></a>
+          <a className="icon-github" href="https://github.com/markschwa" target="_blank" rel="noopener noreferrer"></a>
+          <a className="icon-linkedin" href="https://www.linkedin.com/in/markschwanethal/" target="_blank" rel="noopener noreferrer"></a>
         </div>
       </div>
 
