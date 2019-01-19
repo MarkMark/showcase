@@ -108,6 +108,7 @@
 @import "elements/elements.icons";
 @import "elements/elements.page";
 @import "elements/elements.text";
+@import "elements/elements.link";
 @import "elements/elements.headings";
 @import "elements/elements.hr";
 @import "../node_modules/inuitcss/elements/elements.images";
@@ -166,6 +167,7 @@ $inuit-offsets: true;
 @import "utilities/utilities.headings";
 @import "utilities/utilities.alignment";
 @import "utilities/utilities.border";
+@import "utilities/utilities.flex";
 @import "utilities/utilities.responsive-hidden";
 @import "../node_modules/inuitcss/utilities/utilities.spacings";
 @import "../node_modules/inuitcss/utilities/utilities.responsive-spacings";
