@@ -1,6 +1,11 @@
 
 .c-previews {
   margin-bottom: $inuit-global-spacing-unit;
+  width: calc(50% - #{$global-spacing-primary});
+
+  @include mq($from: tablet) {
+    width: 230px;
+  }
 
   &__preview {
     border-radius: 2px;

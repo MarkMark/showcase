@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 function About() {
   return (
     <section className="o-wrapper o-wrapper--small u-margin--bottom">
-
       <div>
         <p>Hey I’m Mark.</p>
         <p>Developing websites & apps is my passion. I specialise in front-end development, focusing on all responsive viewport sizes while using the latest tools & frameworks to improve speed and quality of a project.</p>
@@ -19,7 +18,6 @@ function About() {
         <span className="c-pill">SCSS</span>
         <span className="c-pill">LESS</span>
       </div>
-
     </section>
   )
 }
