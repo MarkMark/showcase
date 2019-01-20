@@ -1,6 +1,11 @@
 
-.c-previews {
+.c-thumb {
   margin-bottom: $inuit-global-spacing-unit;
+  width: calc(50% - #{$global-spacing-primary});
+
+  @include mq($from: tablet) {
+    width: 230px;
+  }
 
   &__preview {
     border-radius: 2px;
@@ -47,7 +52,7 @@
     }
 
     &:hover {
-      .c-previews__preview__desc { opacity: 1; }
+      .c-thumb__preview__desc { opacity: 1; }
     }
 
     &__screenshot {
