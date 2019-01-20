@@ -10,9 +10,6 @@ import { Thumbs } from '../../Services/Doc/Thumb'
 class Home extends Component {
 
   render() {
-
-    console.log('Thumbs', Thumbs)
-
     return (
       <section>
 
