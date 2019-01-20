@@ -2,14 +2,12 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router-dom'
 
-import WEBPme from '../../img/misc/mark.webp'
-import PNGme from '../../img/misc/mark.jpg'
+import meWebp from '../../img/misc/mark.webp'
+import mePng from '../../img/misc/mark.jpg'
 
 
 class About extends Component {
-
   render() {
-
     return (
       <section className="u-padding-top-large">
 
@@ -28,8 +26,8 @@ class About extends Component {
               <div className="c-circle c-circle--150">
                 <img
                   ref={img => this.img = img}
-                  src={WEBPme}
-                  onError={() => this.img.src = PNGme}
+                  src={meWebp}
+                  onError={() => this.img.src = mePng}
                   alt="Mark Schwanethal"
                 />
               </div>
@@ -37,7 +35,7 @@ class About extends Component {
 
             <div className="o-layout__item u-1/1">
 
-              <p>Hey, hows it going? I'm Mark Schwanethal and I like building things!</p>
+              <p>Hey I'm Mark Schwanethal and I like building things.</p>
 
               <p>I'm originally from South Wales in the UK but I've worked & lived in London, Sydney & now <b>Toronto</b>.</p>
 
@@ -47,16 +45,12 @@ class About extends Component {
             </div>
 
             <div className="o-layout__item u-1/1 u-text-align--center">
-
               <NavLink className="c-button" to="/contact">
                 Contact me
               </NavLink>
-
             </div>
           </div>
-
         </div>
-
       </section>
     )
   }
