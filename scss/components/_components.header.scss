@@ -1,130 +1,75 @@
 
 .c-header {
-  background: $colour-white;
-  border-bottom: 1px solid $colour-black-dividers;
-  padding: $global-spacing-tertiary 0;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1024px;
 
-  @include mq($from: tablet) { padding: 0; }
-
-  .o-wrapper { position: relative; }
+    @include mq($from: tablet) {
+      flex-wrap: nowrap;
+    }
+  }
 
   &__logo {
-    align-items: center;
-    background: $colour-black;
-    border-radius: 100%;
-    bottom: 0;
-    color: $colour-white-text;
-    cursor: pointer;
-    display: flex;
-    font-weight: $global-font-medium;
-    height: 50px;
-    justify-content: center;
-    left: $global-spacing-primary;
-    margin-bottom: auto;
-    margin-top: auto;
-    position: absolute;
-    text-align: center;
+    color: $colour-black-text;
+    padding: $global-spacing-primary;
     text-decoration: none;
-    top: 0;
-    width: 50px;
 
-    &:hover {
-      span { transform: rotate(0deg); }
-    }
-
-    span {
-      font-size: 20px;
-      transform: rotate(-40deg);
-      transition: transform .2s linear;
+    @include mq($from: tablet) {
+      padding: $global-spacing-tertiary $global-spacing-primary;
     }
   }
 
-
-  &__icon {
+  &__nav {
+    background: $colour-black;
     bottom: 0;
-    cursor: pointer;
-    height: 32px;
-    margin-bottom: auto;
-    margin-top: auto;
-    padding: $global-spacing-secondary;
-    position: absolute;
-    right: $global-spacing-primary;
-    top: 0;
-    width: 32px;
-
-    @include mq($from: tablet) { display: none; }
-  }
-
-
-  nav {
-    background: $colour-white;
-    box-shadow: 0 1px 1px -1px rgba($colour-black, .9);
-    display: none;
-    position: absolute;
-    right: -100%;
-    text-align: right;
-    top: 32px;
-    transition: right .2s linear;
-    width: 100%;
-    z-index: 9;
-
-    &.active { display: block; }
-    &.animate { right: 0; }
+    border-radius: 6px 6px 0 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 350px;
+    position: fixed;
+    right: 0;
+    white-space: nowrap;
+    z-index: 9999;
 
     @include mq($from: tablet) {
       background: none;
-      box-shadow: none;
-      display: inline-block;
+      bottom: auto;
+      border-radius: 0;
+      left: auto;
+      margin: 0;
+      max-width: 100%;
       position: static;
+      right: auto;
     }
-  }
 
-  li,
-  ul {
-    display: block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    @include mq($from: tablet) {
-      display: inline-block;
-    }
-  }
-
-  // li { display: inline-block; }
-
-  li a {
-    color: $colour-black-text;
-    display: block;
-    font-weight: $global-font-light;
-    padding: $global-spacing-primary;
-    position: relative;
-    text-align: right;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    @include mq($from: tablet) {
-      padding: $global-spacing-quaternary $global-spacing-primary;
+    ul {
+      list-style: none;
+      margin: 0;
       text-align: center;
     }
 
-    &:hover {
-      &::after {
-        @include mq($from: tablet) {
-          background: $colour-black-text;
-        }
-      }
+    li {
+      display: inline-block;
     }
 
-    &::after {
-      bottom: -1px;
-      content: '';
-      display: block;
-      height: 1px;
-      left: 0;
-      position: absolute;
-      right: 0;
-      transition: background .2s linear;
+    a {
+      color: $colour-white-text;
+      display: inline-block;
+      padding: $global-spacing-primary;
+      text-decoration: none;
+      transition: color ease-in-out .2s;
+
+      &:hover {
+        color: $colour-black;
+      }
+
+      @include mq($from: tablet) {
+        color: $colour-black-text;
+        padding: $global-spacing-tertiary $global-spacing-primary;
+      }
     }
   }
 }

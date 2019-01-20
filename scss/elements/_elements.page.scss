@@ -24,3 +24,18 @@ html {
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
 }
+
+
+body {
+  padding-bottom: 52px;
+
+  @include mq($from: tablet) {
+    padding-bottom: 0;
+  }
+}
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
