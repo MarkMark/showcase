@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom'
 
 function Preview({ data = {} }) {
   return (
-    <div className="c-previews">
-      <NavLink className="c-previews__preview" to={`showcase/${data.name.toLowerCase().replace(/\s/g, '-')}`}>
-        <div className="c-previews__preview__screenshot">
-          <div className="c-previews__preview__desc">
+    <div className="c-thumb">
+      <NavLink className="c-thumb__preview" to={`showcase/${data.name.toLowerCase().replace(/\s/g, '-')}`}>
+        <div className="c-thumb__preview__screenshot">
+          <div className="c-thumb__preview__desc">
             <div>
               <h4>{data.name}</h4>
               <p>{data.desc}</p>

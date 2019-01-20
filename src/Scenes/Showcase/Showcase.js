@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet'
 
 import Hero from './Components/Hero'
-import Preview from '../../Components/Preview/Preview'
+import Thumb from '../../Components/Thumb/Thumb'
 
 import { Thumbs } from '../../Services/Doc/Thumb'
 
@@ -24,7 +24,7 @@ class Showcase extends Component {
           <div className="o-wrapper">
             <div className="m-grid">
               { Thumbs.map((object, i) =>
-                <Preview data={object} key={i} />
+                <Thumb data={object} key={i} />
               )}
             </div>
           </div>

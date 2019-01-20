@@ -1,5 +1,5 @@
 
-.c-previews {
+.c-thumb {
   margin-bottom: $inuit-global-spacing-unit;
   width: calc(50% - #{$global-spacing-primary});
 
@@ -52,7 +52,7 @@
     }
 
     &:hover {
-      .c-previews__preview__desc { opacity: 1; }
+      .c-thumb__preview__desc { opacity: 1; }
     }
 
     &__screenshot {

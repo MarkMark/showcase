@@ -137,14 +137,14 @@
 
 
 
-@import "molecules/grid.scss";
+@import "molecules/molecules.grid.scss";
 
 
 
 // COMPONENTS
 //
 // Build and include your project’s UI components here.
-@import "components/components.previews";
+@import "components/components.thumbs";
 @import "components/components.hero";
 @import "components/components.buttons";
 @import "components/components.linebreak";
