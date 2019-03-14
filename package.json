@@ -9,6 +9,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-webp": "^3.0.0",
     "inuitcss": "^6.0.0",
+    "node-sass": "^4.11.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
@@ -18,7 +19,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "webp": "node devScripts/webpConvert.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "imagemin": "^6.1.0",
+    "imagemin-webp": "^5.0.0"
   }
 }
