@@ -1,5 +1,5 @@
-
-[class^="icon-"], [class*=" icon-"] {
+[class^='a-icon--'],
+[class*=' a-icon--'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -12,4 +12,14 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.a-icon--stackoverflow:before {
+  content: '\ead0';
+}
+.a-icon--github:before {
+  content: '\eab0';
+}
+.a-icon--linkedin:before {
+  content: '\eac9';
 }

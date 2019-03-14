@@ -75,105 +75,96 @@
  */
 
 // SETTINGS
-@import "settings/settings.config";
-@import "~inuitcss/settings/settings.core";
-@import "settings/settings.global";
-
-
-
-
+@import 'settings/settings.config';
+@import '~inuitcss/settings/settings.core';
+@import 'settings/settings.fonts';
+@import 'settings/settings.global';
 
 // TOOLS
-@import "~inuitcss/tools/tools.font-size";
-@import "~inuitcss/tools/tools.clearfix";
-@import "~inuitcss/tools/tools.hidden";
-@import "~sass-mq/mq";
-@import "tools/tools.icons";
-
-
-
-
+@import '~inuitcss/tools/tools.font-size';
+@import '~inuitcss/tools/tools.clearfix';
+@import '~inuitcss/tools/tools.hidden';
+@import '~sass-mq/mq';
 
 // GENERIC
-@import "~inuitcss/generic/generic.box-sizing";
-@import "~inuitcss/generic/generic.normalize";
-@import "~inuitcss/generic/generic.reset";
-@import "~inuitcss/generic/generic.shared";
-
-
-
-
+@import '~inuitcss/generic/generic.box-sizing';
+@import '~inuitcss/generic/generic.normalize';
+@import '~inuitcss/generic/generic.reset';
+@import '~inuitcss/generic/generic.shared';
 
 // ELEMENTS
-@import "elements/elements.icons";
-@import "elements/elements.page";
-@import "elements/elements.text";
-@import "elements/elements.link";
-@import "elements/elements.headings";
-@import "elements/elements.hr";
-@import "~inuitcss/elements/elements.images";
-@import "~inuitcss/elements/elements.tables";
-
-
-
-
+@import 'elements/elements.page';
+@import 'elements/elements.text';
+@import 'elements/elements.link';
+@import 'elements/elements.headings';
+@import 'elements/elements.hr';
+@import '~inuitcss/elements/elements.images';
+@import '~inuitcss/elements/elements.tables';
 
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
-@import "objects/objects.wrapper";
-@import "~inuitcss/objects/objects.layout";
-@import "~inuitcss/objects/objects.media";
-@import "~inuitcss/objects/objects.flag";
-@import "~inuitcss/objects/objects.list-bare";
-@import "~inuitcss/objects/objects.list-inline";
-@import "~inuitcss/objects/objects.box";
-@import "~inuitcss/objects/objects.block";
-@import "~inuitcss/objects/objects.ratio";
-@import "~inuitcss/objects/objects.crop";
-@import "~inuitcss/objects/objects.table";
-@import "~inuitcss/objects/objects.pack";
-@import "objects/objects.icons";
+@import 'objects/objects.wrapper';
+@import '~inuitcss/objects/objects.layout';
+@import '~inuitcss/objects/objects.media';
+@import '~inuitcss/objects/objects.flag';
+@import '~inuitcss/objects/objects.list-bare';
+@import '~inuitcss/objects/objects.list-inline';
+@import '~inuitcss/objects/objects.box';
+@import '~inuitcss/objects/objects.block';
+@import '~inuitcss/objects/objects.ratio';
+@import '~inuitcss/objects/objects.crop';
+@import '~inuitcss/objects/objects.table';
+@import '~inuitcss/objects/objects.pack';
 
+// ATOMS
+//
+// Atoms include basic HTML elements like form labels, inputs, buttons, others
+// that can’t be broken down any further without ceasing to be functional.
+@import 'atoms/atoms.icons';
 
+// MOLECULES
+//
+// Molecules are relatively simple groups of UI elements functioning together
+// as a unit. E.G a form label, search input, and button can join together to
+// create a search form molecule
+@import 'molecules/molecules.grid';
 
-@import "molecules/molecules.grid.scss";
-
-
+// STRUCTURES
+//
+// Structures are relatively complex UI components composed of groups of
+// molecules and/or atoms and/or other organisms. These organisms form distinct
+// sections of an interface
 
 // COMPONENTS
 //
 // Build and include your project’s UI components here.
-@import "components/components.thumbs";
-@import "components/components.hero";
-@import "components/components.buttons";
-@import "components/components.linebreak";
-@import "components/components.client-list";
-@import "components/components.footer";
-@import "components/components.header";
-@import "components/components.circle";
-@import "components/components.pill";
-
-
-
-
+@import 'components/components.thumbs';
+@import 'components/components.hero';
+@import 'components/components.buttons';
+@import 'components/components.linebreak';
+@import 'components/components.client-list';
+@import 'components/components.footer';
+@import 'components/components.header';
+@import 'components/components.circle';
+@import 'components/components.pill';
 
 // UTILITIES
-@import "~inuitcss/utilities/utilities.clearfix";
+@import '~inuitcss/utilities/utilities.clearfix';
 
 // Be aware that enabling offsets produces a large chunk of classes which might
 // bloat your CSS, depending of the amount of breakpoints you defined.
 // Only set this to `true` if you are absolutely sure about what you are doing.
 $inuit-offsets: true;
-@import "~inuitcss/utilities/utilities.widths";
-@import "utilities/utilities.max-width";
-@import "utilities/utilities.headings";
-@import "utilities/utilities.alignment";
-@import "utilities/utilities.border";
-@import "utilities/utilities.flex";
-@import "utilities/utilities.spacing";
-@import "utilities/utilities.responsive-hidden";
-@import "~inuitcss/utilities/utilities.spacings";
-@import "~inuitcss/utilities/utilities.responsive-spacings";
-@import "~inuitcss/utilities/utilities.print";
-@import "~inuitcss/utilities/utilities.hide";
+@import '~inuitcss/utilities/utilities.widths';
+@import 'utilities/utilities.max-width';
+@import 'utilities/utilities.headings';
+@import 'utilities/utilities.alignment';
+@import 'utilities/utilities.border';
+@import 'utilities/utilities.flex';
+@import 'utilities/utilities.spacing';
+@import 'utilities/utilities.responsive-hidden';
+@import '~inuitcss/utilities/utilities.spacings';
+@import '~inuitcss/utilities/utilities.responsive-spacings';
+@import '~inuitcss/utilities/utilities.print';
+@import '~inuitcss/utilities/utilities.hide';
