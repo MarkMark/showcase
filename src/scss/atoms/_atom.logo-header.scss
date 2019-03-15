@@ -1,0 +1,9 @@
+.a-headerLogo {
+  color: $colour-black-text;
+  padding: $global-spacing-primary;
+  text-decoration: none;
+
+  @include mq($from: tablet) {
+    padding: $global-spacing-tertiary $global-spacing-primary;
+  }
+}

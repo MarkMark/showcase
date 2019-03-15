@@ -125,6 +125,7 @@
 @import 'atoms/atoms.icons';
 @import 'atoms/atoms.social-links';
 @import 'atoms/atom.pills';
+@import 'atoms/atom.logo-header';
 
 // MOLECULES
 //
@@ -133,6 +134,7 @@
 // create a search form molecule
 @import 'molecules/molecules.grid';
 @import 'molecules/molecules.hero';
+@import 'molecules/molecule.navigation';
 
 // STRUCTURES
 //
@@ -140,6 +142,7 @@
 // molecules and/or atoms and/or other organisms. These organisms form distinct
 // sections of an interface
 @import 'structures/structure.skew';
+@import 'structures/structure.header';
 
 // COMPONENTS
 //
@@ -150,7 +153,6 @@
 @import 'components/components.linebreak';
 @import 'components/components.client-list';
 @import 'components/components.footer';
-@import 'components/components.header';
 @import 'components/components.circle';
 
 // UTILITIES
