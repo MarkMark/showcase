@@ -3,11 +3,6 @@ $column-width-small: $inuit-wrapper-width / 2 !default;
 .o-col {
   flex: 1;
   padding: $global-spacing-primary;
-
-  // a small size column
-  &--medium {
-    flex: 0 1 $column-width-small;
-  }
 }
 
 // Create a grid

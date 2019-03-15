@@ -18,4 +18,8 @@ $inuit-wrapper-width: 1200px !default;
   margin-right: auto;
   margin-left: auto;
   max-width: $inuit-wrapper-width;
+
+  &--medium {
+    max-width: ($inuit-wrapper-width / 2);
+  }
 }

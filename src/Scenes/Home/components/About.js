@@ -15,9 +15,9 @@ export default function About() {
 
   return (
     <section className="s-skew">
-      <div className="o-wrapper u-padding-vertical-huge ">
-        <div className="o-layout o-layout--centered">
-          <div className="o-col o-col--medium">
+      <div className="o-wrapper o-wrapper--medium u-padding-vertical-huge">
+        <div className="o-layout">
+          <div className="o-col">
             <div className="u-margin-bottom-large">
               <p>Hey I’m Mark.</p>
               <p>
