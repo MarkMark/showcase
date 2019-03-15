@@ -1,11 +1,13 @@
 .a-pill {
   background: $colour-black;
   border-radius: 150px;
+  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);
   color: $colour-white;
+  cursor: default;
   display: inline-block;
-  padding: $global-spacing-secondary $global-spacing-primary;
   font-size: 1.2rem;
   margin-bottom: $global-spacing-secondary;
+  padding: $global-spacing-secondary $global-spacing-primary;
 
   & + & {
     margin-left: $global-spacing-secondary;
