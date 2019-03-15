@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router-dom'
 
-// import meWebp from '../../img/misc/mark.webp'
-import mePng from '../../img/misc/mark.jpg'
+import Img from '../../Components/Image/Img'
+
+import Me from '../../img/misc/mark.jpg'
 
 class About extends Component {
   render() {
@@ -20,12 +21,7 @@ class About extends Component {
               <h1 className="u-text-align--center">About me</h1>
 
               <div className="c-circle c-circle--150">
-                <img
-                  ref={img => (this.img = img)}
-                  src={mePng}
-                  onError={() => (this.img.src = mePng)}
-                  alt="Mark Schwanethal"
-                />
+                <Img src={Me} alt={'Mark Schwanethal'} />
               </div>
 
               <div>
