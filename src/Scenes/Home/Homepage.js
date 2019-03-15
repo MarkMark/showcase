@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Hero from './components/Hero'
 import Thumb from '../../Components/Thumb/Thumb'
 import About from './components/About'
-import Linebreak from '../../Components/Linebreak/Linebreak'
 
 import { Thumbs } from '../../Services/Doc/Thumb'
 

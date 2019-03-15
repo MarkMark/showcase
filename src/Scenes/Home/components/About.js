@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <section className="o-wrapper u-padding-vertical-huge">
+    <section className="o-wrapper u-padding-vertical-huge s-skew">
       <div className="o-layout o-layout--centered">
         <div className="o-col o-col--medium">
           <div className="u-margin-bottom-large">
