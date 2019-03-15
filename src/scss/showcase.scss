@@ -123,6 +123,7 @@
 // Atoms include basic HTML elements like form labels, inputs, buttons, others
 // that can’t be broken down any further without ceasing to be functional.
 @import 'atoms/atoms.icons';
+@import 'atoms/atoms.social-links';
 
 // MOLECULES
 //
@@ -130,6 +131,7 @@
 // as a unit. E.G a form label, search input, and button can join together to
 // create a search form molecule
 @import 'molecules/molecules.grid';
+@import 'molecules/molecules.hero';
 
 // STRUCTURES
 //
@@ -157,6 +159,7 @@
 // bloat your CSS, depending of the amount of breakpoints you defined.
 // Only set this to `true` if you are absolutely sure about what you are doing.
 $inuit-offsets: true;
+@import 'utilities/utillities.font';
 @import '~inuitcss/utilities/utilities.widths';
 @import 'utilities/utilities.max-width';
 @import 'utilities/utilities.headings';

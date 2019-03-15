@@ -1,39 +1,35 @@
 import React from 'react'
 
-function Hero() {
+export default function Hero() {
   return (
-    <section className="c-hero">
-      <div className="c-hero__wrapper">
-        <div className="c-hero__text">
-          <div>
-            <span>Web & app</span>
-            <h1>Front end developer.</h1>
-          </div>
+    <section className="m-hero">
+      <div className="m-hero__content">
+        <div>
+          <span>Web & app</span>
+          <h1 className="u-weight--medium">Front end developer</h1>
         </div>
+      </div>
 
-        <div className="c-hero__social">
-          <a
-            className="a-icon--stackoverflow"
-            href="https://stackoverflow.com/users/1893067/mark"
-            target="_blank"
-            rel="noopener noreferrer"
-          />
-          <a
-            className="a-icon--github"
-            href="https://github.com/markschwa"
-            target="_blank"
-            rel="noopener noreferrer"
-          />
-          <a
-            className="a-icon--linkedin"
-            href="https://www.linkedin.com/in/markschwanethal/"
-            target="_blank"
-            rel="noopener noreferrer"
-          />
-        </div>
+      <div className="m-hero__social">
+        <a
+          className="a-socialLink a-icon--stackoverflow"
+          href="https://stackoverflow.com/users/1893067/mark"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+        <a
+          className="a-socialLink a-icon--github"
+          href="https://github.com/markschwa"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+        <a
+          className="a-socialLink a-icon--linkedin"
+          href="https://www.linkedin.com/in/markschwanethal/"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
       </div>
     </section>
   )
 }
-
-export default Hero
