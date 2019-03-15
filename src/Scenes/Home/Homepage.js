@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import Hero from './components/Hero'
-import Thumb from '../../Components/Thumb/Thumb'
 import About from './components/About'
-
-import { Thumbs } from '../../Services/Doc/Thumb'
+import Work from './components/Work'
 
 class Home extends Component {
   render() {
@@ -12,6 +10,8 @@ class Home extends Component {
         <Hero />
 
         <About />
+
+        <Work />
 
         {/* <div className="o-wrapper">
           <div className="m-grid">
