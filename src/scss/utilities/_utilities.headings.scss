@@ -12,30 +12,29 @@
  */
 
 .u-giga {
-  font-size: 55px;
-  font-weight: $global-font-medium;
+  font-size: $inuit-font-size-h1 * 2;
 }
 
 .u-h1 {
-  @include inuit-font-size($inuit-font-size-h1, $important: true);
+  font-size: $inuit-font-size-h1;
 }
 
 .u-h2 {
-  @include inuit-font-size($inuit-font-size-h2, $important: true);
+  font-size: $inuit-font-size-h2;
 }
 
 .u-h3 {
-  @include inuit-font-size($inuit-font-size-h3, $important: true);
+  font-size: $inuit-font-size-h3;
 }
 
 .u-h4 {
-  @include inuit-font-size($inuit-font-size-h4, $important: true);
+  font-size: $inuit-font-size-h4;
 }
 
 .u-h5 {
-  @include inuit-font-size($inuit-font-size-h5, $important: true);
+  font-size: $inuit-font-size-h5;
 }
 
 .u-h6 {
-  @include inuit-font-size($inuit-font-size-h6, $important: true);
+  font-size: $inuit-font-size-h6;
 }
