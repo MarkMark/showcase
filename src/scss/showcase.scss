@@ -123,6 +123,7 @@
 // Atoms include basic HTML elements like form labels, inputs, buttons, others
 // that can’t be broken down any further without ceasing to be functional.
 @import 'atoms/atoms.icons';
+@import 'atoms/atoms.copy';
 @import 'atoms/atoms.social-links';
 @import 'atoms/atom.pills';
 @import 'atoms/atom.logo-header';
@@ -143,6 +144,7 @@
 // sections of an interface
 @import 'structures/structure.skew';
 @import 'structures/structure.header';
+@import 'structures/structures.footer';
 
 // COMPONENTS
 //
@@ -152,7 +154,6 @@
 @import 'components/components.buttons';
 @import 'components/components.linebreak';
 @import 'components/components.client-list';
-@import 'components/components.footer';
 @import 'components/components.circle';
 
 // UTILITIES
