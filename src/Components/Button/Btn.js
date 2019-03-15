@@ -12,9 +12,17 @@ export default function Btn({
     ...(target === '_blank' && { rel: 'noopener noreferrer' })
   }
 
-  return (
-    <NavLink className={classes} to={href} {...attr}>
-      {text}
-    </NavLink>
-  )
+  if (href[0] === '/') {
+    return (
+      <NavLink className={classes} to={href} {...attr}>
+        {text}
+      </NavLink>
+    )
+  } else {
+    return (
+      <a className={classes} href={href} {...attr}>
+        {text}
+      </a>
+    )
+  }
 }
