@@ -1,28 +1,31 @@
-
-.c-button {
+.a-button {
   background: $colour-black;
   border-radius: 25px;
+  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);
   color: $colour-white-text;
   display: inline-block;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: $global-font-light;
   margin-bottom: $global-spacing-primary;
   padding: $global-spacing-primary $global-spacing-tertiary;
   text-decoration: none;
   text-transform: uppercase;
-  transition: background .2s linear;
+  transition: background 0.2s linear;
 
-  &:hover { background: rgba($colour-black, .9); }
+  &:hover {
+    background: rgba($colour-black, 0.9);
+  }
 
-
-  & + & { margin-left: $global-spacing-primary; }
+  & + & {
+    margin-left: $global-spacing-primary;
+  }
 
   &--white {
     background: $colour-white;
     color: $colour-black-text;
 
-    &:hover { background: rgba($colour-white, .9); }
+    &:hover {
+      background: rgba($colour-white, 0.9);
+    }
   }
-
 }
-

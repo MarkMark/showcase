@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
-import { NavLink } from 'react-router-dom'
 
 import Img from '../../Components/Image/Img'
+import Btn from '../../Components/Button/Btn'
 
 import Me from '../../img/misc/mark.jpg'
 
@@ -45,9 +45,7 @@ class About extends Component {
               </div>
 
               <div className="u-text-align--center">
-                <NavLink className="c-button" to="/contact">
-                  Contact me
-                </NavLink>
+                <Btn href={'/contact'} text={'Contact me'} />
               </div>
             </div>
           </div>
