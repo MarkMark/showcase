@@ -1,6 +1,18 @@
 import React from 'react'
+import Pill from '../../../Components/Pills/Pill'
 
 export default function About() {
+  const EXPERTISE = [
+    'React',
+    'React Native',
+    'Angular',
+    'Vanilla JS',
+    'HTML',
+    'CSS',
+    'SCSS',
+    'LESS'
+  ]
+
   return (
     <section className="o-wrapper u-padding-vertical-huge s-skew">
       <div className="o-layout o-layout--centered">
@@ -16,14 +28,9 @@ export default function About() {
           </div>
 
           <div className="u-text-align--center">
-            <span className="c-pill">React</span>
-            <span className="c-pill">React Native</span>
-            <span className="c-pill">Angular</span>
-            <span className="c-pill">Vanilla JS</span>
-            <span className="c-pill">HTML</span>
-            <span className="c-pill">CSS</span>
-            <span className="c-pill">SCSS</span>
-            <span className="c-pill">LESS</span>
+            {EXPERTISE.map((skill, i) => {
+              return <Pill key={i} text={skill} />
+            })}
           </div>
         </div>
       </div>

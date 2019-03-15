@@ -124,6 +124,7 @@
 // that can’t be broken down any further without ceasing to be functional.
 @import 'atoms/atoms.icons';
 @import 'atoms/atoms.social-links';
+@import 'atoms/atom.pills';
 
 // MOLECULES
 //
@@ -151,7 +152,6 @@
 @import 'components/components.footer';
 @import 'components/components.header';
 @import 'components/components.circle';
-@import 'components/components.pill';
 
 // UTILITIES
 @import '~inuitcss/utilities/utilities.clearfix';

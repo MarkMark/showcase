@@ -1,11 +1,10 @@
-
-.c-pill {
+.a-pill {
   background: $colour-black;
   border-radius: 150px;
   color: $colour-white;
   display: inline-block;
   padding: $global-spacing-secondary $global-spacing-primary;
-  font-size: 12px;
+  font-size: 1.2rem;
   margin-bottom: $global-spacing-secondary;
 
   & + & {
