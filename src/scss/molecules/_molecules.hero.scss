@@ -7,6 +7,10 @@
   min-height: calc(100vh - 88px);
   padding: $global-spacing-primary;
 
+  &--medium {
+    min-height: 50vh;
+  }
+
   &__content {
     align-items: center;
     display: flex;
