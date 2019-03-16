@@ -3,10 +3,6 @@ import { Helmet } from 'react-helmet'
 
 import Hero from './Components/Hero'
 import About from './Components/About'
-import Linebreak from '../../../Components/Linebreak/Linebreak'
-
-// import ShowcasesWEBP_phone  from '../../../img/showcase/sanctuary-app/white-phone-right.webp'
-import ShowcasesPNG_phone from '../../../img/showcase/sanctuary-app/white-phone-right.png'
 
 class SanctuaryApp extends Component {
   render() {
