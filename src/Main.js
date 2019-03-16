@@ -8,25 +8,24 @@ import Showcase from './Scenes/Showcase/Showcase'
 
 import SanctuaryApp from './Scenes/Showcases/Sanctuary/App/SanctuaryApp'
 import SanctuaryWeb from './Scenes/Showcases/Sanctuary/Web/Sanctuary'
-
 import CooltraxWeb from './Scenes/Showcases/Cooltrax/Web/Cooltrax'
 import CooltraxApp from './Scenes/Showcases/Cooltrax/App/CooltraxApp'
 
-import Showcase_caltex from './Scenes/Showcases/Caltex/Caltex'
-import Showcase_zensation from './Scenes/Showcases/Zensation/Zensation'
-import Showcase_runawayPets from './Scenes/Showcases/RunawayPets/RunawayPets'
-import Showcase_mendr from './Scenes/Showcases/Mendr/Mendr'
-import Showcase_AMP from './Scenes/Showcases/AMP/AMP'
-import Showcase_betfair from './Scenes/Showcases/Betfair/Betfair'
-import Showcase_empire from './Scenes/Showcases/Empire/Empire'
-import Showcase_enracha from './Scenes/Showcases/Enracha/Enracha'
-import Showcase_fiction from './Scenes/Showcases/Fiction/Fiction'
-import Showcase_foxwoods from './Scenes/Showcases/Foxwoods/Foxwoods'
-import Showcase_GSC from './Scenes/Showcases/GSC/GSC'
-import Showcase_jetstar from './Scenes/Showcases/Jetstar/Jetstar'
-import Showcase_kearAndKu from './Scenes/Showcases/KearAndKu/KearAndKu'
-import Showcase_moneyGaming from './Scenes/Showcases/MoneyGaming/MoneyGaming'
-import Showcase_tchoiDesign from './Scenes/Showcases/TchoiDesign/TchoiDesign'
+import Caltex from './Scenes/Showcases/Caltex/Caltex'
+import Zensation from './Scenes/Showcases/Zensation/Zensation'
+import RunawayPets from './Scenes/Showcases/RunawayPets/RunawayPets'
+import Mendr from './Scenes/Showcases/Mendr/Mendr'
+import AMP from './Scenes/Showcases/AMP/AMP'
+import Betfair from './Scenes/Showcases/Betfair/Betfair'
+import Empire from './Scenes/Showcases/Empire/Empire'
+import Enracha from './Scenes/Showcases/Enracha/Enracha'
+import Fiction from './Scenes/Showcases/Fiction/Fiction'
+import Foxwoods from './Scenes/Showcases/Foxwoods/Foxwoods'
+import GSC from './Scenes/Showcases/GSC/GSC'
+import Jetstar from './Scenes/Showcases/Jetstar/Jetstar'
+import KearAndKu from './Scenes/Showcases/KearAndKu/KearAndKu'
+import MoneyGaming from './Scenes/Showcases/MoneyGaming/MoneyGaming'
+import TchoiDesign from './Scenes/Showcases/TchoiDesign/TchoiDesign'
 
 class Main extends Component {
   render() {
@@ -37,38 +36,26 @@ class Main extends Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/showcase" component={Showcase} />
-          <Route path="/showcase/zensation" component={Showcase_zensation} />
-          <Route
-            path="/showcase/runaway-pets"
-            component={Showcase_runawayPets}
-          />
-          <Route path="/showcase/mendr" component={Showcase_mendr} />
+          <Route path="/showcase/zensation" component={Zensation} />
+          <Route path="/showcase/runaway-pets" component={RunawayPets} />
+          <Route path="/showcase/mendr" component={Mendr} />
           <Route path="/showcase/cooltrax-app" component={CooltraxApp} />
           <Route path="/showcase/sanctuary-app" component={SanctuaryApp} />
           <Route path="/showcase/sanctuary" component={SanctuaryWeb} />
 
-          <Route path="/showcase/amp" component={Showcase_AMP} />
-          <Route path="/showcase/betfair" component={Showcase_betfair} />
-          <Route path="/showcase/caltex" component={Showcase_caltex} />
+          <Route path="/showcase/amp" component={AMP} />
+          <Route path="/showcase/betfair" component={Betfair} />
+          <Route path="/showcase/caltex" component={Caltex} />
           <Route path="/showcase/cooltrax" component={CooltraxWeb} />
-          <Route path="/showcase/empire" component={Showcase_empire} />
-          <Route path="/showcase/enracha" component={Showcase_enracha} />
-          <Route
-            path="/showcase/fiction-candy-jewellery"
-            component={Showcase_fiction}
-          />
-          <Route path="/showcase/foxwoods" component={Showcase_foxwoods} />
-          <Route path="/showcase/gsc" component={Showcase_GSC} />
-          <Route path="/showcase/jetstar" component={Showcase_jetstar} />
-          <Route path="/showcase/kear-and-ku" component={Showcase_kearAndKu} />
-          <Route
-            path="/showcase/moneygaming"
-            component={Showcase_moneyGaming}
-          />
-          <Route
-            path="/showcase/tchoi-design"
-            component={Showcase_tchoiDesign}
-          />
+          <Route path="/showcase/empire" component={Empire} />
+          <Route path="/showcase/enracha" component={Enracha} />
+          <Route path="/showcase/fiction-candy-jewellery" component={Fiction} />
+          <Route path="/showcase/foxwoods" component={Foxwoods} />
+          <Route path="/showcase/gsc" component={GSC} />
+          <Route path="/showcase/jetstar" component={Jetstar} />
+          <Route path="/showcase/kear-and-ku" component={KearAndKu} />
+          <Route path="/showcase/moneygaming" component={MoneyGaming} />
+          <Route path="/showcase/tchoi-design" component={TchoiDesign} />
         </Switch>
       </main>
     )
