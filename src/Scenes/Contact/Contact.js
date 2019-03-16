@@ -12,13 +12,10 @@ class Contact extends Component {
           <meta name="description" content="Want to get in touch?" />
         </Helmet>
 
-        <div className="o-wrapper u-max-width--500">
-          <h1 className="u-text-align--center u-margin-bottom-large">
-            Contact me
-          </h1>
-
+        <div className="o-wrapper u-o-wrapper--medium u-padding-top-large u-padding-bottom-huge">
           <div className="o-layout">
-            <div className="o-layout__item u-1/1 u-text-align--center">
+            <div className="o-col u-text-align--center">
+              <h1>Contact me</h1>
               <p>
                 I really enjoy helping business & start-ups build great
                 websites, web apps & mobile applications.
