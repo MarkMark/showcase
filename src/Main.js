@@ -6,16 +6,18 @@ import About from './Scenes/About/About'
 import Contact from './Scenes/Contact/Contact'
 import Showcase from './Scenes/Showcase/Showcase'
 
+import SanctuaryApp from './Scenes/Showcases/Sanctuary/App/SanctuaryApp'
+import SanctuaryWeb from './Scenes/Showcases/Sanctuary/Web/Sanctuary'
+
+import CooltraxWeb from './Scenes/Showcases/Cooltrax/Web/Cooltrax'
+import CooltraxApp from './Scenes/Showcases/Cooltrax/App/CooltraxApp'
+
+import Showcase_caltex from './Scenes/Showcases/Caltex/Caltex'
 import Showcase_zensation from './Scenes/Showcases/Zensation/Zensation'
 import Showcase_runawayPets from './Scenes/Showcases/RunawayPets/RunawayPets'
 import Showcase_mendr from './Scenes/Showcases/Mendr/Mendr'
-import Showcase_cooltraxApp from './Scenes/Showcases/CooltraxApp/CooltraxApp'
-import SanctuaryApp from './Scenes/Showcases/Sanctuary/App/SanctuaryApp'
-import SanctuaryWeb from './Scenes/Showcases/Sanctuary/Web/Sanctuary'
 import Showcase_AMP from './Scenes/Showcases/AMP/AMP'
 import Showcase_betfair from './Scenes/Showcases/Betfair/Betfair'
-import Showcase_caltex from './Scenes/Showcases/Caltex/Caltex'
-import Showcase_cooltrax from './Scenes/Showcases/Cooltrax/Cooltrax'
 import Showcase_empire from './Scenes/Showcases/Empire/Empire'
 import Showcase_enracha from './Scenes/Showcases/Enracha/Enracha'
 import Showcase_fiction from './Scenes/Showcases/Fiction/Fiction'
@@ -41,17 +43,14 @@ class Main extends Component {
             component={Showcase_runawayPets}
           />
           <Route path="/showcase/mendr" component={Showcase_mendr} />
-          <Route
-            path="/showcase/cooltrax-app"
-            component={Showcase_cooltraxApp}
-          />
+          <Route path="/showcase/cooltrax-app" component={CooltraxApp} />
           <Route path="/showcase/sanctuary-app" component={SanctuaryApp} />
           <Route path="/showcase/sanctuary" component={SanctuaryWeb} />
 
           <Route path="/showcase/amp" component={Showcase_AMP} />
           <Route path="/showcase/betfair" component={Showcase_betfair} />
           <Route path="/showcase/caltex" component={Showcase_caltex} />
-          <Route path="/showcase/cooltrax" component={Showcase_cooltrax} />
+          <Route path="/showcase/cooltrax" component={CooltraxWeb} />
           <Route path="/showcase/empire" component={Showcase_empire} />
           <Route path="/showcase/enracha" component={Showcase_enracha} />
           <Route

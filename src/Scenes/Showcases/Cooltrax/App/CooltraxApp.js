@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { Helmet } from "react-helmet";
+import React, { Component } from 'react'
+import { Helmet } from 'react-helmet'
 
-import Hero from "./Components/Hero";
-import Linebreak from "../../../Components/Linebreak/Linebreak";
+import Hero from './Components/Hero'
+import Linebreak from '../../../../Components/Linebreak/Linebreak'
 
 // import ShowcasesWEBP_hand from '../../../img/showcase/cooltrax-app/hand-settings.webp'
-import ShowcasesPNG_hand from "../../../img/showcase/cooltrax-app/hand-settings.png";
+import ShowcasesPNG_hand from '../../../../img/showcase/cooltrax-app/hand-settings.png'
 
 class Zensation extends Component {
   render() {
@@ -246,8 +246,8 @@ class Zensation extends Component {
           />
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default Zensation;
+export default Zensation
