@@ -5,13 +5,13 @@ import Home from './Scenes/Home/Homepage'
 import About from './Scenes/About/About'
 import Contact from './Scenes/Contact/Contact'
 import Showcase from './Scenes/Showcase/Showcase'
+
 import Showcase_zensation from './Scenes/Showcases/Zensation/Zensation'
 import Showcase_runawayPets from './Scenes/Showcases/RunawayPets/RunawayPets'
 import Showcase_mendr from './Scenes/Showcases/Mendr/Mendr'
 import Showcase_cooltraxApp from './Scenes/Showcases/CooltraxApp/CooltraxApp'
-import Showcase_sanctuaryApp from './Scenes/Showcases/SanctuaryApp/SanctuaryApp'
-import Showcase_sanctuary from './Scenes/Showcases/Sanctuary/Sanctuary'
-
+import SanctuaryApp from './Scenes/Showcases/Sanctuary/App/SanctuaryApp'
+import SanctuaryWeb from './Scenes/Showcases/Sanctuary/Web/Sanctuary'
 import Showcase_AMP from './Scenes/Showcases/AMP/AMP'
 import Showcase_betfair from './Scenes/Showcases/Betfair/Betfair'
 import Showcase_caltex from './Scenes/Showcases/Caltex/Caltex'
@@ -45,11 +45,8 @@ class Main extends Component {
             path="/showcase/cooltrax-app"
             component={Showcase_cooltraxApp}
           />
-          <Route
-            path="/showcase/sanctuary-app"
-            component={Showcase_sanctuaryApp}
-          />
-          <Route path="/showcase/sanctuary" component={Showcase_sanctuary} />
+          <Route path="/showcase/sanctuary-app" component={SanctuaryApp} />
+          <Route path="/showcase/sanctuary" component={SanctuaryWeb} />
 
           <Route path="/showcase/amp" component={Showcase_AMP} />
           <Route path="/showcase/betfair" component={Showcase_betfair} />

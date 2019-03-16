@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Linebreak from '../../../../Components/Linebreak/Linebreak'
-import Img from '../../../../Components/Image/Img'
+import Linebreak from '../../../../../Components/Linebreak/Linebreak'
+import Img from '../../../../../Components/Image/Img'
 
 import SanctuaryDashboard from '../Images/SanctuaryDashboard.png'
 
