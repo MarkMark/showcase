@@ -58,6 +58,7 @@ $inuit-widths-breakpoint-separator: \@ !default;
     .o-col--#{$denominator}#{$breakpoint} {
       flex-grow: $denominator;
       flex-basis: ($denominator * 8.33333333333) + 0%;
+      padding: $global-spacing-primary;
     }
 
     @if ($inuit-offsets == true) {

@@ -1,11 +1,10 @@
-import React, { Component } from "react";
-import { Helmet } from "react-helmet";
+import React, { Component } from 'react'
+import { Helmet } from 'react-helmet'
 
-import Hero from "./Components/Hero";
-import Linebreak from "../../../Components/Linebreak/Linebreak";
+import Linebreak from '../../../Components/Linebreak/Linebreak'
 
 // import ShowcasesWEBP_dash  from '../../../img/showcase/sanctuary/laptop-dashboard.webp'
-import ShowcasesPNG_dash from "../../../img/showcase/sanctuary/laptop-dashboard.png";
+import ShowcasesPNG_dash from '../../../img/showcase/sanctuary/laptop-dashboard.png'
 
 class Sanctuary extends Component {
   render() {
@@ -18,8 +17,6 @@ class Sanctuary extends Component {
             content="Take a look at my work with Sanctuary"
           />
         </Helmet>
-
-        <Hero />
 
         <div className="o-wrapper">
           <h3 className="u-text-align--center">Overview</h3>
@@ -103,8 +100,8 @@ class Sanctuary extends Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default Sanctuary;
+export default Sanctuary
