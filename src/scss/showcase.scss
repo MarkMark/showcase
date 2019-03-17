@@ -127,8 +127,8 @@
 @import 'atoms/atoms.buttons';
 @import 'atoms/atoms.copy';
 @import 'atoms/atoms.social-links';
-@import 'atoms/atom.pills';
-@import 'atoms/atom.logo-header';
+@import 'atoms/atoms.pills';
+@import 'atoms/atoms.logo-header';
 
 // MOLECULES
 //
@@ -136,7 +136,7 @@
 // as a unit. E.G a form label, search input, and button can join together to
 // create a search form molecule
 @import 'molecules/molecules.hero';
-@import 'molecules/molecule.navigation';
+@import 'molecules/molecules.navigation';
 @import 'molecules/molecules.thumb';
 
 // STRUCTURES
@@ -144,8 +144,8 @@
 // Structures are relatively complex UI components composed of groups of
 // molecules and/or atoms and/or other organisms. These organisms form distinct
 // sections of an interface
-@import 'structures/structure.skew';
-@import 'structures/structure.header';
+@import 'structures/structures.skew';
+@import 'structures/structures.header';
 @import 'structures/structures.footer';
 
 // COMPONENTS
