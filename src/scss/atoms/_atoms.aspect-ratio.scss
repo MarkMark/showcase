@@ -1,0 +1,15 @@
+.a-aspect {
+  overflow: hidden;
+  position: relative;
+
+  &--16\/9 {
+    padding-top: 56.25%;
+  }
+
+  > img {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

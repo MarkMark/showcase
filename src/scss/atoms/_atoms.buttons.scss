@@ -29,3 +29,22 @@
     }
   }
 }
+
+.a-buttonFlat {
+  background: $colour-white;
+  border-radius: 5px;
+  border: 1px solid $colour-black;
+  color: $colour-black-text;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: $global-font-light;
+  margin-bottom: $global-spacing-primary;
+  padding: $global-spacing-secondary $global-spacing-tertiary;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0 3px 6px -4px $colour-black;
+  }
+}

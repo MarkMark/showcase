@@ -1,14 +1,19 @@
-
 .u-text-align {
-
-  &--center { text-align: center; }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
 }
-
 
 .u-alignment {
   display: flex;
 
-  &--center { justify-content: center; }
-  &--right { justify-content: flex-end; }
-
+  &--center {
+    justify-content: center;
+  }
+  &--right {
+    justify-content: flex-end;
+  }
 }

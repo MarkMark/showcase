@@ -12,14 +12,6 @@ class Home extends Component {
         <About />
 
         <Work />
-
-        {/* <div className="o-wrapper">
-          <div className="m-grid">
-            { Thumbs.map((object, i) => i < 4 &&
-              <Thumb data={object} key={i} />
-            )}
-          </div>
-        </div> */}
       </section>
     )
   }
