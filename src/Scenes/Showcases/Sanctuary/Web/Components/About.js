@@ -7,7 +7,7 @@ import SanctuaryWebDashboard from '../Images/SanctuaryWebDashboard.png'
 
 export default function About() {
   return (
-    <section>
+    <section className="s-skew u-padding-vertical">
       <div className="o-wrapper">
         <div className="o-layout">
           <div className="o-col">
