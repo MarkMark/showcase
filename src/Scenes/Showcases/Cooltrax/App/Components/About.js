@@ -7,7 +7,7 @@ import CooltraxSettings from '../Images/CooltraxSettings.png'
 
 export default function About() {
   return (
-    <section>
+    <section className="s-skew u-padding-vertical">
       <div className="o-wrapper">
         <div className="o-layout">
           <div className="o-col--12 o-col--6@tablet">
