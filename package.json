@@ -20,8 +20,10 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "autoprefixer": "^9.5.0",
     "imagemin": "^6.1.0",
-    "imagemin-webp": "^5.0.0"
+    "imagemin-webp": "^5.0.0",
+    "postcss": "^7.0.14"
   },
   "browserslist": [
     ">0.2%",
