@@ -38,13 +38,13 @@
     text-decoration: none;
     transition: color ease-in-out 0.2s;
 
-    &:hover {
-      color: $colour-black;
-    }
-
     @include mq($from: tablet) {
       color: $colour-black-text;
       padding: $global-spacing-tertiary $global-spacing-primary;
+
+      &:hover {
+        color: $colour-black;
+      }
     }
   }
 }
