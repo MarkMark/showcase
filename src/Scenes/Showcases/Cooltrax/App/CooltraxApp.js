@@ -20,7 +20,14 @@ class Zensation extends Component {
         <Hero />
 
         <Expertise
-          expertise={['Angular', 'Cordova', 'SCSS', 'Android', 'iOS']}
+          expertise={[
+            'Angular',
+            'TypeScript',
+            'Cordova',
+            'SCSS',
+            'Android',
+            'iOS'
+          ]}
         />
 
         <About />
