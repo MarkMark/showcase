@@ -1,13 +1,14 @@
 import React from 'react'
 
-function Hero() {
+export default function Hero() {
   return (
-    <div className="c-hero c-hero--mendr">
-      <div className="o-wrapper">
-        <h1><span>Mendr</span></h1>
+    <section className="m-hero m-hero--medium">
+      <div className="m-hero__content">
+        <div>
+          <span>Web application</span>
+          <h1 className="u-weight--medium">Mendr</h1>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
-
-export default Hero

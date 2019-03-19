@@ -1,0 +1,14 @@
+.s-header {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: $inuit-wrapper-width;
+    padding: 0 $global-spacing-primary;
+
+    @include mq($from: tablet) {
+      flex-wrap: nowrap;
+    }
+  }
+}

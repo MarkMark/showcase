@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 
 import Hero from './Components/Hero'
-import Thumb from '../../Components/Thumb/Thumb'
-
-import { Thumbs } from '../../Services/Doc/Thumb'
-
+import Work from './Components/Work'
 
 class Showcase extends Component {
   render() {
@@ -18,20 +15,10 @@ class Showcase extends Component {
 
         <Hero />
 
-        <div className="o-wrapper">
-          <h3>Latest work</h3>
-
-          <div className="o-wrapper">
-            <div className="m-grid">
-              { Thumbs.map((object, i) =>
-                <Thumb data={object} key={i} />
-              )}
-            </div>
-          </div>
-        </div>
+        <Work />
       </section>
     )
   }
 }
 
-export default Showcase;
+export default Showcase

@@ -1,0 +1,66 @@
+.m-thumb {
+  border-radius: 2px;
+  box-shadow: 0 1px 2px $colour-black-dividers;
+  margin: 0 auto;
+  max-width: 230px;
+  position: relative;
+  width: 100%;
+
+  &__wrapper {
+    display: block;
+    padding: $global-spacing-secondary;
+  }
+
+  &__title {
+    padding: $global-spacing-secondary 0;
+
+    h3 {
+      font-size: 1.4rem;
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &__img {
+    border-radius: 2px;
+    margin-bottom: $global-spacing-secondary;
+  }
+
+  &__desc {
+    background: $colour-white;
+    bottom: 0;
+    font-size: 1.2rem;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: $global-spacing-secondary;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.2s linear;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    h4 {
+      margin-bottom: $global-spacing-secondary;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &::after {
+      background: $colour-white;
+      bottom: 0;
+      box-shadow: 0 -1px 5px $colour-white;
+      content: '';
+      height: $global-spacing-secondary;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

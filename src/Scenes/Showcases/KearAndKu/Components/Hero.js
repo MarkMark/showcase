@@ -1,13 +1,14 @@
 import React from 'react'
 
-function Hero() {
+export default function Hero() {
   return (
-    <div className="c-hero c-hero--cooltrax-app">
-      <div className="o-wrapper">
-        <h1><span>Cooltrax App</span></h1>
+    <section className="m-hero m-hero--medium">
+      <div className="m-hero__content">
+        <div>
+          <span>Website</span>
+          <h1 className="u-weight--medium">Kear & ku</h1>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
-
-export default Hero

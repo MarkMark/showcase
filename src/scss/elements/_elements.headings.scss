@@ -1,0 +1,40 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+
+$inuit-font-size-h1: 3.6rem !default;
+$inuit-font-size-h2: 2.8rem !default;
+$inuit-font-size-h3: 2.4rem !default;
+$inuit-font-size-h4: 2rem !default;
+$inuit-font-size-h5: 1.8rem !default;
+$inuit-font-size-h6: 1.6rem !default;
+
+h1 {
+  font-size: $inuit-font-size-h1;
+}
+
+h2 {
+  font-size: $inuit-font-size-h2;
+}
+
+h3 {
+  font-size: $inuit-font-size-h3;
+}
+
+h4 {
+  font-size: $inuit-font-size-h4;
+}
+
+h5 {
+  font-size: $inuit-font-size-h5;
+}
+
+h6 {
+  font-size: $inuit-font-size-h6;
+}
