@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 
 import Hero from './Components/Hero'
-import Expertise from './Components/Expertise'
+import Expertise from '../../../../Components/Expertise/Expertise'
 import About from './Components/About'
 
 class SanctuaryApp extends Component {
@@ -19,7 +19,17 @@ class SanctuaryApp extends Component {
 
         <Hero />
 
-        <Expertise />
+        <Expertise
+          expertise={[
+            'React Native',
+            'Vanilla JS',
+            'JSX',
+            'Android',
+            'iOS',
+            'NodeJS',
+            'Firebase'
+          ]}
+        />
 
         <About />
       </section>

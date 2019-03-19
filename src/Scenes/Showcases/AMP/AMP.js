@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 
 import Hero from './Components/Hero'
+import Expertise from '../../../Components/Expertise/Expertise'
 import About from './Components/About'
 
 class AMP extends Component {
@@ -14,6 +15,8 @@ class AMP extends Component {
         </Helmet>
 
         <Hero />
+
+        <Expertise expertise={['Handlebars JS', 'Vanilla JS', 'SCSS']} />
 
         <About />
       </section>

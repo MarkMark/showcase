@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 
 import Hero from './Components/Hero'
+import Expertise from '../../../../Components/Expertise/Expertise'
 import About from './Components/About'
 
 class Sanctuary extends Component {
@@ -17,6 +18,19 @@ class Sanctuary extends Component {
         </Helmet>
 
         <Hero />
+
+        <Expertise
+          expertise={[
+            'React',
+            'Vanilla JS',
+            'JSX',
+            'HTML',
+            'SCSS',
+            'Atomic Design',
+            'NodeJS',
+            'Firebase'
+          ]}
+        />
 
         <About />
       </section>

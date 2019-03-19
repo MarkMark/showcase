@@ -1,25 +1,15 @@
 import React from 'react'
 
-import Pill from '../../../../../Components/Pills/Pill'
+import Pill from '../Pills/Pill'
 
-export default function Expertise() {
-  const EXPERTISE = [
-    'React Native',
-    'Vanilla JS',
-    'JSX',
-    'Android',
-    'iOS',
-    'NodeJS',
-    'Firebase'
-  ]
-
+export default function Expertise({ expertise = [] }) {
   return (
     <section>
       <div className="o-wrapper o-wrapper--medium">
         <div className="o-layout">
           <div className="o-col">
             <div className="u-text-align--center">
-              {EXPERTISE.map((skill, i) => {
+              {expertise.map((skill, i) => {
                 return <Pill key={i} text={skill} />
               })}
             </div>
