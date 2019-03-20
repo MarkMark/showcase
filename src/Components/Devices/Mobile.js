@@ -6,23 +6,16 @@ export default function Mobile({
   notch = true,
   landscape = false
 }) {
-  const ATTR = {
-    ...(shade === 'dark'
-      ? { className: 'm-device' }
-      : { className: 'm-device m-device--light' }),
-    ...(landscape && { className: 'm-device--landscape' })
-  }
-
   return (
     <div
       className={classNames(
-        'm-device',
-        { 'm-device--light': shade === 'light' },
-        { 'm-device--landscape': landscape }
+        'm-mobile',
+        { 'm-mobile--light': shade === 'light' },
+        { 'm-mobile--landscape': landscape }
       )}
     >
-      {notch && <span className="m-device__notch" />}
-      <div className="m-device__screen" />
+      {notch && <span className="m-mobile__notch" />}
+      <div className="m-mobile__screen" />
     </div>
   )
 }
