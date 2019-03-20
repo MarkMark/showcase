@@ -28,8 +28,6 @@ storiesOf('Button', module)
 
 storiesOf('Btn', module)
   .addDecorator(story => (
-    <MemoryRouter initialEntries={['/']}>
-      <div style={{ textAlign: 'center' }}>{story()}</div>
-    </MemoryRouter>
+    <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>
   ))
   .add('Primary', () => <Btn />)
