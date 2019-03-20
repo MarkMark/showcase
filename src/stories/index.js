@@ -8,6 +8,7 @@ import '../scss/showcase.scss'
 import Btn from '../Components/Button/Btn'
 import Mobile from '../Components/Devices/Mobile'
 import Tablet from '../Components/Devices/Tablet'
+import Laptop from '../Components/Devices/Laptop'
 
 storiesOf('Buttons', module)
   .addDecorator(story => (
@@ -35,3 +36,7 @@ storiesOf('Devices/Tablets', module)
   .add('Dark landscape', () => <Tablet landscape={true} />)
   .add('Light', () => <Tablet shade={'light'} />)
   .add('Light landscape', () => <Tablet shade={'light'} landscape={true} />)
+
+storiesOf('Devices/Laptops', module)
+  .add('Dark', () => <Laptop />)
+  .add('Light', () => <Laptop shade={'light'} />)
