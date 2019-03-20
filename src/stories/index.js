@@ -39,4 +39,6 @@ storiesOf('Devices/Tablets', module)
 
 storiesOf('Devices/Laptops', module)
   .add('Dark', () => <Laptop />)
+  .add('Dark no shadow', () => <Laptop shadow={false} />)
   .add('Light', () => <Laptop shade={'light'} />)
+  .add('Light no shadow', () => <Laptop shade={'light'} shadow={false} />)

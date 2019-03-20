@@ -1,12 +1,16 @@
 import React from 'react'
 import classNames from 'classnames'
 
-export default function Laptop({ shade = 'dark' }) {
+export default function Laptop({ shade = 'dark', shadow = true }) {
   return (
     <div
-      className={classNames('m-laptop', {
-        'm-laptop--light': shade === 'light'
-      })}
+      className={classNames(
+        'm-laptop',
+        {
+          'm-laptop--light': shade === 'light'
+        },
+        { 'm-laptop--shadow': shadow }
+      )}
     >
       <div className="m-laptop__lid">
         <div className="m-laptop__screen" />
