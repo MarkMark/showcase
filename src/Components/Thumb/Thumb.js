@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 import Img from '../Image/Img'
 
-function Preview({ data = {} }) {
+function Preview({ data = { name: 'Company name' } }) {
   return (
     <div className="m-thumb">
       <NavLink

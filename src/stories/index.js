@@ -10,6 +10,9 @@ import Mobile from '../Components/Devices/Mobile'
 import Tablet from '../Components/Devices/Tablet'
 import Laptop from '../Components/Devices/Laptop'
 import LineBreak from '../Components/LineBreaks/LineBreak'
+import Pill from '../Components/Pills/Pill'
+import Expertise from '../Components/Expertise/Expertise'
+import Thumb from '../Components/Thumb/Thumb'
 
 storiesOf('Buttons', module)
   .addDecorator(story => (
@@ -23,6 +26,27 @@ storiesOf('Buttons', module)
   ))
 
 storiesOf('Line break', module).add('LineBreak', () => <LineBreak />)
+
+// TODO:
+storiesOf('Thumbnails', module)
+  .addDecorator(story => (
+    <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>
+  ))
+  .add('Thumb', () => <Thumb />)
+
+storiesOf('Pills', module)
+  .add('Pill', () => <Pill />)
+  .add('Expertise', () => (
+    <Expertise
+      expertise={[
+        'Example',
+        'Example 1',
+        'Example 2',
+        'Example 3',
+        'Example 4'
+      ]}
+    />
+  ))
 
 storiesOf('Devices/Mobiles', module)
   .add('Dark', () => <Mobile />)
