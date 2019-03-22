@@ -22,6 +22,9 @@ class Sanctuary extends Component {
         <Expertise
           expertise={[
             'React',
+            'Redux',
+            'Jest',
+            'Async/Await',
             'Vanilla JS',
             'JSX',
             'HTML',

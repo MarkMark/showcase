@@ -7,10 +7,13 @@ export default function About() {
     'React Native',
     'Angular',
     'Vanilla JS',
+    'ES6 >',
     'HTML',
     'CSS',
     'SCSS',
-    'LESS'
+    'LESS',
+    'Atomic Design',
+    'Storybook'
   ]
 
   return (
@@ -20,7 +23,7 @@ export default function About() {
           <div className="o-col">
             <div className="u-margin-bottom-large">
               <p>Hey I’m Mark.</p>
-              <p>
+              <p className="u-text-align--justify">
                 Developing websites & apps is my passion. I specialise in
                 front-end development, focusing on all responsive viewport sizes
                 while using the latest tools & frameworks to improve speed and

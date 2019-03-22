@@ -22,6 +22,9 @@ class SanctuaryApp extends Component {
         <Expertise
           expertise={[
             'React Native',
+            'Redux',
+            'Jest',
+            'Async/Await',
             'Vanilla JS',
             'JSX',
             'Android',
