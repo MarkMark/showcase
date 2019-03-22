@@ -52,15 +52,14 @@ export const Thumbs = [
   },
   {
     name: 'AMP',
-    desc:
-      'AMP Capital is Australias largest retail and corporate pension providers & own around 30 shopping malls across Australia & New Zealand.',
+    desc: `AMP Capital is Australia's largest retail and corporate pension providers & own around 30 shopping malls across Australia & New Zealand.`,
     // src: ThumbWebpAmp,
     src: ThumbJpgAmp
   },
   {
     name: 'Zensation',
     desc:
-      "Zensation is a popular Tea House in Redfern, Sydney. Echoing the stylings of a 1920s Shanghai Tea House. It's a truly unique experience to sit down relax and ,try the best tea in Australia while eating some delicious Yum Cha!",
+      "Zensation is a popular Tea House in Redfern, Sydney. Echoing the stylings of a 1920s Shanghai Tea House. It's a truly unique experience to sit down relax and, try the best tea in Australia while eating some delicious Yum Cha!",
     // src: ThumbWebpZensation,
     src: ThumbJpgZensation
   },
@@ -108,7 +107,7 @@ export const Thumbs = [
   {
     name: 'Betfair',
     desc:
-      'Betfair Casino New Jersey offers a variety of fun NJ online caisno gambling games from Blackjack tables, to slots and Roulette. Join today for your chance to ,win big.',
+      'Betfair Casino New Jersey offers a variety of fun NJ online casino gambling games from Blackjack tables, to slots and Roulette. Join today for your chance to, win big.',
     // src: ThumbWebpBetfair,
     src: ThumbJpgBetfair
   },
@@ -122,21 +121,21 @@ export const Thumbs = [
   {
     name: 'Foxwoods',
     desc:
-      'Since 1992, Foxwoods Resort Casino has offered guests The Wonder Of It All as the premier resort destination in the Northeast. As the largest resort casino in ,North America, Foxwoods offers a vast array of gaming in seven casinos; AAA Four-Diamond hotels, restaurants from gourmet to quick service, world-renowned spas, award-winning golf, state-of-the-art theaters, exclusive retailers and free-to-play online casino games at FoxwoodsONLINE.com.',
+      'Since 1992, Foxwoods Resort Casino has offered guests The Wonder Of It All as the premier resort destination in the Northeast. As the largest resort casino in, North America, Foxwoods offers a vast array of gaming in seven casinos; AAA Four-Diamond hotels, restaurants from gourmet to quick service, world-renowned spas, award-winning golf, state-of-the-art theaters, exclusive retailers and free-to-play online casino games at FoxwoodsONLINE.com.',
     // src: ThumbWebpFoxwoods,
     src: ThumbJpgFoxwoods
   },
   {
     name: 'Enracha',
     desc:
-      "Enracha. Rank's community-based gaming business for the Spanish market. The brand offers a range of popular community games like bingo as well as electronic ,roulette and slot machine games, sports betting and food, drink and live entertainment.",
+      "Enracha. Rank's community-based gaming business for the Spanish market. The brand offers a range of popular community games like bingo as well as electronic, roulette and slot machine games, sports betting and food, drink and live entertainment.",
     // src: ThumbWebpEnracha,
     src: ThumbJpgEnracha
   },
   {
     name: 'MoneyGaming',
     desc:
-      'MoneyGaming.com is one of the UK’s most popular casino gaming websites, online since 2005 and part of the GameAccount Network group of companies since 2010. ,Established in 2002, GameAccount Network is a UK company headquartered in London, United Kingdom and ranked 29th fastest-growing UK technology company in 2011 by the Sunday Times newspaper.',
+      'MoneyGaming.com is one of the UK’s most popular casino gaming websites, online since 2005 and part of the GameAccount Network group of companies since 2010. Established in 2002, GameAccount Network is a UK company headquartered in London, United Kingdom and ranked 29th fastest-growing UK technology company in 2011 by the Sunday Times newspaper.',
     // src: ThumbWebpMoneyGaming,
     src: ThumbJpgMoneyGaming
   },
