@@ -9,6 +9,7 @@ import Btn from '../Components/Button/Btn'
 import Mobile from '../Components/Devices/Mobile'
 import Tablet from '../Components/Devices/Tablet'
 import Laptop from '../Components/Devices/Laptop'
+import Linebreak from '../Components/Linebreak/Linebreak'
 
 storiesOf('Buttons', module)
   .addDecorator(story => (
@@ -20,6 +21,8 @@ storiesOf('Buttons', module)
   .add('Flat custom text', () => (
     <Btn classes={'a-buttonFlat'} text="Click me!" />
   ))
+
+storiesOf('Line break', module).add('LineBreak', () => <Linebreak />)
 
 storiesOf('Devices/Mobiles', module)
   .add('Dark', () => <Mobile />)

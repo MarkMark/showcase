@@ -1,18 +1,16 @@
-
-.c-linebreak {
+.a-lineBreak {
   background: $colour-black-dividers;
   display: block;
-  margin: $global-spacing-quaternary auto;
   height: 2px;
+  margin: $global-spacing-quaternary auto;
   width: 125px;
 
   &::after {
-    background: $colour-black-text;
+    background: rgba($colour-black, 0.85);
     content: '';
     display: block;
     height: 2px;
-    width: 50px;
     margin: 0 auto;
+    width: 50px;
   }
 }
-

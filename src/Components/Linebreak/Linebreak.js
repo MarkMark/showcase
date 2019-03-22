@@ -1,17 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Previews extends Component {
-
-  render() {
-
-    return (
-
-      <span className="c-linebreak"></span>
-
-    )
-
-  }
-
+export default function Linebreak() {
+  return <span className="a-lineBreak" />
 }
-
-export default Previews;
