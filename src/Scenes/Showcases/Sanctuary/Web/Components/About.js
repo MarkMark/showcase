@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Linebreak from '../../../../../Components/Linebreak/Linebreak'
+import LineBreak from '../../../../../Components/LineBreaks/LineBreak'
 import Img from '../../../../../Components/Image/Img'
 
 import SanctuaryWebDashboard from '../Images/SanctuaryWebDashboard.png'
@@ -24,7 +24,7 @@ export default function About() {
           </div>
         </div>
 
-        <Linebreak />
+        <LineBreak />
 
         <div className="o-layout">
           <div className="o-col--12 o-col--6@tablet">
@@ -50,7 +50,7 @@ export default function About() {
           </div>
         </div>
 
-        <Linebreak />
+        <LineBreak />
 
         <div className="o-layout">
           <div className="o-col">
