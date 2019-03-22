@@ -63,9 +63,15 @@ $laptop: m-laptop !default;
     bottom: 5.852%;
     border-radius: 2.5rem 2.5rem 1.6rem 1.6rem;
     left: 3.09%;
+    overflow: hidden;
     position: absolute;
     right: 3.09%;
     top: 1.465%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 
