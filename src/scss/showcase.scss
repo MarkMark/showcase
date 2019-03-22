@@ -129,6 +129,7 @@
 @import 'atoms/atoms.social-links';
 @import 'atoms/atoms.pills';
 @import 'atoms/atoms.logo-header';
+@import 'atoms/atoms.line-break';
 
 // MOLECULES
 //
@@ -138,6 +139,7 @@
 @import 'molecules/molecules.hero';
 @import 'molecules/molecules.navigation';
 @import 'molecules/molecules.thumb';
+@import 'molecules/molecules.devices';
 
 // STRUCTURES
 //
@@ -151,7 +153,6 @@
 // COMPONENTS
 //
 // Build and include your project’s UI components here.
-@import 'components/components.linebreak';
 @import 'components/components.circle';
 
 // UTILITIES

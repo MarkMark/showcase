@@ -17,10 +17,20 @@
     "build": "react-scripts build",
     "webp": "node devScripts/webpConvert.js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@storybook/addon-actions": "^5.0.3",
+    "@storybook/addon-links": "^5.0.3",
+    "@storybook/addon-viewport": "^5.0.3",
+    "@storybook/addons": "^5.0.3",
+    "@storybook/react": "^5.0.3",
     "autoprefixer": "^9.5.0",
+    "babel-loader": "^8.0.5",
+    "file-loader": "^3.0.1",
     "imagemin": "^6.1.0",
     "imagemin-webp": "^5.0.0",
     "postcss": "^7.0.14"
