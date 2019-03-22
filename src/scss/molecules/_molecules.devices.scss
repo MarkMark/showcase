@@ -4,13 +4,19 @@ $laptop: m-laptop !default;
 
 .#{$mobile} {
   background: lighten($colour-black, 15%);
-  border-radius: 32px;
+  border-radius: 3.2rem;
   box-shadow: 0 1px 5px rgba($colour-black, 0.6),
     inset 0 0px 7px rgba($colour-black, 0.8);
   display: inline-block;
-  height: 547px;
+  max-width: 259px;
   position: relative;
-  width: 259px;
+  width: 100%;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-top: 211.2%;
+  }
 
   &--light {
     background: darken($colour-white, 5%);
@@ -31,17 +37,21 @@ $laptop: m-laptop !default;
 
   &__notch {
     background: lighten($colour-black, 15%);
-    border-radius: 0 0 8px 8px;
-    display: inline-block;
-    height: 20px;
+    border-radius: 0 0 0.8rem 0.8rem;
     left: 0;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
     right: 0;
-    top: 8px;
-    width: 100px;
+    top: 1.465%;
+    width: 38.616%;
     z-index: 99;
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 20%;
+    }
 
     .#{$mobile}--light & {
       background: darken($colour-white, 5%);
@@ -50,12 +60,12 @@ $laptop: m-laptop !default;
 
   &__screen {
     background: $colour-white;
-    bottom: 32px;
-    border-radius: 25px 25px 16px 16px;
-    left: 8px;
+    bottom: 5.852%;
+    border-radius: 2.5rem 2.5rem 1.6rem 1.6rem;
+    left: 3.09%;
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 3.09%;
+    top: 1.465%;
   }
 }
 
