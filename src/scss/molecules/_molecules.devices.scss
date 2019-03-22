@@ -75,9 +75,15 @@ $laptop: m-laptop !default;
   box-shadow: 0 2px 5px -1px rgba($colour-black, 0.6),
     inset 0 0px 7px rgba($colour-black, 0.8);
   display: inline-block;
-  height: 650px;
   position: relative;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 162.5%;
+  }
 
   &--light {
     background: darken($colour-white, 5%);
@@ -97,13 +103,13 @@ $laptop: m-laptop !default;
   }
 
   &__screen {
-    border-radius: 2px;
     background: $colour-white;
+    border-radius: 0.2rem;
+    bottom: 3.077%;
+    left: 5%;
     position: absolute;
-    top: 20px;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    right: 5%;
+    top: 3.077%;
   }
 }
 
