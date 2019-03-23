@@ -12,7 +12,7 @@ export default function Img({
   return (
     <img
       src={src}
-      class={classes}
+      className={classes}
       ref={img => (_img = img)}
       onError={() => !i && !!fallback && (_img.src = fallback) + i++}
       alt={alt}

@@ -8,12 +8,14 @@ export default function About() {
     'Angular',
     'Vanilla JS',
     'ES6 >',
-    'HTML',
-    'CSS',
+    'HTML5',
+    'CSS3',
     'SCSS',
     'LESS',
     'Atomic Design',
-    'Storybook'
+    'Storybook',
+    'Jest',
+    'Karma'
   ]
 
   return (
