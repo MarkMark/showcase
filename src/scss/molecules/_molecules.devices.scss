@@ -30,9 +30,13 @@ $laptop: m-laptop !default;
   }
 
   &--landscape {
-    transform: rotate(-90deg);
+    max-width: 547px;
     box-shadow: -2px 0 5px rgba($colour-black, 0.6),
       inset 0 0px 7px rgba($colour-black, 0.8);
+
+    &::before {
+      padding-top: 47.35%;
+    }
   }
 
   &__notch {
@@ -53,6 +57,20 @@ $laptop: m-laptop !default;
       padding-top: 20%;
     }
 
+    .#{$mobile}--landscape & {
+      border-radius: 0 0.8rem 0.8rem 0;
+      bottom: 0;
+      height: 39%;
+      left: 1.5%;
+      margin: auto 0;
+      top: 0;
+      width: 20px;
+
+      &::after {
+        padding-top: auto;
+      }
+    }
+
     .#{$mobile}--light & {
       background: darken($colour-white, 5%);
     }
@@ -67,6 +85,14 @@ $laptop: m-laptop !default;
     position: absolute;
     right: 3.09%;
     top: 1.465%;
+
+    .#{$mobile}--landscape & {
+      border-radius: 2.5rem 1.6rem 1.6rem 2.5rem;
+      bottom: 3.09%;
+      left: 1.465%;
+      right: 5.852%;
+      top: 3.09%;
+    }
 
     img {
       height: 100%;
