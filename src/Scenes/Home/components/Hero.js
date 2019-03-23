@@ -24,19 +24,25 @@ export default function Hero() {
           href="https://stackoverflow.com/users/1893067/mark"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <span className="u-hidden-visually">Stackoverflow profile link</span>
+        </a>
         <a
           className="a-socialLink a-icon--github"
           href="https://github.com/markschwa"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <span className="u-hidden-visually">Github profile link</span>
+        </a>
         <a
           className="a-socialLink a-icon--linkedin"
           href="https://www.linkedin.com/in/markschwanethal/"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <span className="u-hidden-visually">Linkedin profile link</span>
+        </a>
       </div>
     </section>
   )
