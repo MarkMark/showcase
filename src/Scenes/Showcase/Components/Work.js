@@ -10,8 +10,8 @@ export default function Work() {
       <div className="o-wrapper">
         <div className="o-layout">
           {Thumbs.map((object, i) => (
-            <div className="o-col--12 o-col--6@tablet o-col--3@desktop">
-              <Thumb data={object} key={i} />
+            <div key={i} className="o-col--12 o-col--6@tablet o-col--3@desktop">
+              <Thumb data={object} />
             </div>
           ))}
         </div>
