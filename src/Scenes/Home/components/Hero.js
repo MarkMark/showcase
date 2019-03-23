@@ -2,6 +2,8 @@ import React from 'react'
 
 import Mobile from '../../../Components/Devices/Mobile'
 
+import HeroImg from '../Images/runaway-pets-list.png'
+
 export default function Hero() {
   return (
     <section className="m-hero m-hero--homepage">
@@ -12,7 +14,7 @@ export default function Hero() {
         </div>
 
         <div className="u-flex u-text-align--center">
-          <Mobile classes="m-hero__device" />
+          <Mobile classes="m-hero__device" src={HeroImg} />
         </div>
       </div>
 
