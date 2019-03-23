@@ -8,9 +8,8 @@ $laptop: m-laptop !default;
   box-shadow: 0 1px 5px rgba($colour-black, 0.6),
     inset 0 0px 7px rgba($colour-black, 0.8);
   display: inline-block;
-  max-width: 259px;
   position: relative;
-  width: 100%;
+  width: 259px;
 
   &::before {
     content: '';
@@ -26,6 +25,7 @@ $laptop: m-laptop !default;
 
   &--landscape {
     max-width: 547px;
+    width: 100%;
 
     &::before {
       padding-top: 47.35%;
@@ -100,8 +100,9 @@ $laptop: m-laptop !default;
   box-shadow: 0 2px 5px -1px rgba($colour-black, 0.6),
     inset 0 0px 7px rgba($colour-black, 0.8);
   display: inline-block;
-  position: relative;
   max-width: 400px;
+  min-width: 259px;
+  position: relative;
   width: 100%;
 
   &::before {
