@@ -22,17 +22,10 @@ $laptop: m-laptop !default;
     background: darken($colour-white, 5%);
     box-shadow: 0 2px 3px -2px rgba($colour-black, 0.3),
       inset 0 0px 7px rgba($colour-black, 0.1);
-
-    &.#{$mobile}--landscape {
-      box-shadow: -2px 0 3px -2px rgba($colour-black, 0.3),
-        inset 0 0px 7px rgba($colour-black, 0.1);
-    }
   }
 
   &--landscape {
     max-width: 547px;
-    box-shadow: -2px 0 5px rgba($colour-black, 0.6),
-      inset 0 0px 7px rgba($colour-black, 0.8);
 
     &::before {
       padding-top: 47.35%;
@@ -111,7 +104,7 @@ $laptop: m-laptop !default;
   max-width: 400px;
   width: 100%;
 
-  &::after {
+  &::before {
     content: '';
     display: block;
     padding-top: 162.5%;
@@ -121,17 +114,15 @@ $laptop: m-laptop !default;
     background: darken($colour-white, 5%);
     box-shadow: 0 2px 3px -2px rgba($colour-black, 0.3),
       inset 0 0px 7px rgba($colour-black, 0.1);
-
-    &.#{$tablet}--landscape {
-      box-shadow: -3px 0 3px -2px rgba($colour-black, 0.3),
-        inset 0 0px 7px rgba($colour-black, 0.1);
-    }
   }
 
   &--landscape {
-    transform: rotate(-90deg);
-    box-shadow: -3px 0 5px -1px rgba($colour-black, 0.6),
-      inset 0 0px 7px rgba($colour-black, 0.8);
+    max-width: 650px;
+    width: 100%;
+
+    &::before {
+      padding-top: 61.54%;
+    }
   }
 
   &__screen {
@@ -142,6 +133,13 @@ $laptop: m-laptop !default;
     position: absolute;
     right: 5%;
     top: 3.077%;
+
+    .#{$tablet}--landscape & {
+      bottom: 5%;
+      top: 5%;
+      left: 3.077%;
+      right: 3.077%;
+    }
   }
 }
 
