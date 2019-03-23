@@ -14,7 +14,11 @@ export default function Hero() {
         </div>
 
         <div className="u-flex u-text-align--center">
-          <Mobile classes="m-hero__device" src={HeroImg} />
+          <Mobile
+            classes="m-hero__device"
+            src={HeroImg}
+            alt="Runaway pets list scene"
+          />
         </div>
       </div>
 
