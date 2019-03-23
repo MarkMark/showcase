@@ -28,8 +28,12 @@ $hero: m-hero !default;
   &__device {
     .#{$hero}--homepage & {
       position: relative;
-      transform: rotate(-25deg) translateY(20%);
+      transform: translateX($global-spacing-primary);
       z-index: 99;
+
+      @include mq($from: tablet) {
+        transform: rotate(-25deg) translateY(20%);
+      }
     }
   }
 }
