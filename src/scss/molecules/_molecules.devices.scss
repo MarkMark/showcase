@@ -126,6 +126,15 @@ $laptop: m-laptop !default;
     }
   }
 
+  // Size modifications
+  &--medium {
+    width: 300px;
+
+    &.#{$tablet}--landscape {
+      width: 500px;
+    }
+  }
+
   &__screen {
     background: $colour-white;
     border-radius: 0.2rem;

@@ -1,4 +1,12 @@
 .a-socialLink {
+  background: rgba($colour-white, 0.6);
+  border-radius: 100px;
   display: inline-block;
   padding: $global-spacing-primary;
+  transition: background 0.2s linear;
+  z-index: 999;
+
+  &:hover {
+    background: darken($colour-white, 3%);
+  }
 }

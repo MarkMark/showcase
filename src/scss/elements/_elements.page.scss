@@ -22,11 +22,13 @@ html {
   font-weight: $global-font-regular;
   line-height: 1.6;
   overflow-y: scroll; /* [2] */
+  overflow-x: hidden;
   min-height: 100%; /* [3] */
 }
 
 body {
   font-size: 1.6rem;
+  overflow-x: hidden;
   padding-bottom: 52px;
 
   @include mq($from: tablet) {

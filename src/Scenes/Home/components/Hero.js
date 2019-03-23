@@ -1,12 +1,18 @@
 import React from 'react'
 
+import Mobile from '../../../Components/Devices/Mobile'
+
 export default function Hero() {
   return (
-    <section className="m-hero">
+    <section className="m-hero m-hero--homepage">
       <div className="m-hero__content">
         <div>
           <span>Web & app</span>
           <h1 className="u-weight--medium">Front end developer</h1>
+        </div>
+
+        <div className="u-flex u-text-align--center">
+          <Mobile classes="m-hero__device" />
         </div>
       </div>
 

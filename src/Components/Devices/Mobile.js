@@ -7,6 +7,7 @@ export default function Mobile({
   shade = 'dark',
   notch = true,
   landscape = false,
+  classes = '',
   src = DefaultMobile
 }) {
   return (
@@ -14,7 +15,8 @@ export default function Mobile({
       className={classNames(
         'm-mobile',
         { 'm-mobile--light': shade === 'light' },
-        { 'm-mobile--landscape': landscape }
+        { 'm-mobile--landscape': landscape },
+        classes
       )}
     >
       {notch && <span className="m-mobile__notch" />}
