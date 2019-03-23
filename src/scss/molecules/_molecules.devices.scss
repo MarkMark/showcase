@@ -150,6 +150,11 @@ $laptop: m-laptop !default;
       left: 3.077%;
       right: 3.077%;
     }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 

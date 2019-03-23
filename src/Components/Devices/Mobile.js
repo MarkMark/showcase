@@ -1,15 +1,28 @@
 import React from 'react'
 import classNames from 'classnames'
 
+import Img from '../Image/Img'
+
 import DefaultMobile from './Images/mobile-layout.png'
+import DefaultMobileLandscape from './Images/mobile-layout-landscape.png'
 
 export default function Mobile({
   shade = 'dark',
   notch = true,
   landscape = false,
   classes = '',
-  src = DefaultMobile
+  src = !landscape ? DefaultMobile : DefaultMobileLandscape,
+  fallback = '',
+  imgClasses = '',
+  alt = ''
 }) {
+  let imgAttr = {
+    ...{ src: src },
+    ...(!!fallback && { fallback: fallback }),
+    ...(!!imgClasses && { classes: imgClasses }),
+    ...(!!alt && { alt: alt })
+  }
+
   return (
     <div
       className={classNames(
@@ -21,7 +34,7 @@ export default function Mobile({
     >
       {notch && <span className="m-mobile__notch" />}
       <div className="m-mobile__screen">
-        <img src={src} />
+        <Img {...imgAttr} />
       </div>
     </div>
   )

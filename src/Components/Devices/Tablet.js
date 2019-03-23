@@ -1,11 +1,27 @@
 import React from 'react'
 import classNames from 'classnames'
 
+import Img from '../Image/Img'
+
+import DefaultTablet from './Images/tablet-layout.png'
+import DefaultTabletLandscape from './Images/tablet-layout-landscape.png'
+
 export default function Tablet({
   shade = 'dark',
   landscape = false,
-  classes = ''
+  classes = '',
+  src = !landscape ? DefaultTablet : DefaultTabletLandscape,
+  fallback = '',
+  imgClasses = '',
+  alt = ''
 }) {
+  let imgAttr = {
+    ...{ src: src },
+    ...(!!fallback && { fallback: fallback }),
+    ...(!!imgClasses && { classes: imgClasses }),
+    ...(!!alt && { alt: alt })
+  }
+
   return (
     <div
       className={classNames(
@@ -15,7 +31,9 @@ export default function Tablet({
         classes
       )}
     >
-      <div className="m-tablet__screen" />
+      <div className="m-tablet__screen">
+        <Img {...imgAttr} />
+      </div>
     </div>
   )
 }
