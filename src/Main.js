@@ -6,6 +6,7 @@ import About from './Scenes/About/About'
 import Contact from './Scenes/Contact/Contact'
 import Showcase from './Scenes/Showcase/Showcase'
 
+import Walmart from './Scenes/Showcases/Walmart/Walmart'
 import SanctuaryApp from './Scenes/Showcases/Sanctuary/App/SanctuaryApp'
 import SanctuaryWeb from './Scenes/Showcases/Sanctuary/Web/Sanctuary'
 import CooltraxWeb from './Scenes/Showcases/Cooltrax/Web/Cooltrax'
@@ -35,13 +36,14 @@ class Main extends Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/showcase" component={Showcase} />
+
+          <Route path="/showcase/walmart" component={Walmart} />
           <Route path="/showcase/zensation" component={Zensation} />
           <Route path="/showcase/runaway-pets" component={RunawayPets} />
           <Route path="/showcase/mendr" component={Mendr} />
           <Route path="/showcase/cooltrax-app" component={CooltraxApp} />
           <Route path="/showcase/sanctuary-app" component={SanctuaryApp} />
           <Route path="/showcase/sanctuary" component={SanctuaryWeb} />
-
           <Route path="/showcase/amp" component={AMP} />
           <Route path="/showcase/betfair" component={Betfair} />
           <Route path="/showcase/caltex" component={Caltex} />

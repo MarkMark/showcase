@@ -28,7 +28,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  overflow-x: hidden;
   padding-bottom: 52px;
 
   @include mq($from: tablet) {
