@@ -30,7 +30,8 @@ import SanctuaryApp from '../../Images/Thumbnails/sanctuary-app.webp'
 import SanctuaryAppFallback from '../../Images/Thumbnails/sanctuary-app.jpg'
 import Tchoi from '../../Images/Thumbnails/tchoidesign.webp'
 import TchoiFallback from '../../Images/Thumbnails/tchoidesign.jpg'
-import Walmart from '../../Images/Thumbnails/thumb-walmart.png'
+import Walmart from '../../Images/Thumbnails/thumb-walmart.webp'
+import WalmartFallback from '../../Images/Thumbnails/thumb-walmart.png'
 import Zensation from '../../Images/Thumbnails/zensation.webp'
 import ZensationFallback from '../../Images/Thumbnails/zensation.jpg'
 
@@ -38,8 +39,8 @@ export const Thumbs = [
   {
     name: 'Walmart',
     desc: '',
-    src: Walmart
-    // srcFallback: SanctuaryAppFallback
+    src: Walmart,
+    srcFallback: WalmartFallback
   },
   {
     name: 'Sanctuary app',

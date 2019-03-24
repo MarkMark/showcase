@@ -3,7 +3,8 @@ import React from 'react'
 import Mobile from '../../../../Components/Devices/Mobile'
 import Expertise from '../../../../Components/Expertise/Expertise'
 
-import WalmartMobileCard from '../Images/mobile-credit.jpg'
+import WalmartMobileCard from '../Images/mobile-credit.webp'
+import WalmartMobileCardFallback from '../Images/mobile-credit.jpg'
 
 export default function Tech() {
   return (
@@ -13,6 +14,7 @@ export default function Tech() {
           <div className="o-col u-text-align--center">
             <Mobile
               src={WalmartMobileCard}
+              fallback={WalmartMobileCardFallback}
               alt="Walmart communication preferences page"
               notch={false}
             />
