@@ -2,7 +2,8 @@ import React from 'react'
 
 import Mobile from '../../../Components/Devices/Mobile'
 
-import HeroImg from '../Images/runaway-pets-list.png'
+import HeroImg from '../Images/runaway-pets-list.webp'
+import HeroImgFallback from '../Images/runaway-pets-list.png'
 
 export default function Hero() {
   return (
@@ -17,6 +18,7 @@ export default function Hero() {
           <Mobile
             classes="m-hero__device"
             src={HeroImg}
+            fallback={HeroImgFallback}
             alt="Runaway pets list scene"
           />
         </div>
