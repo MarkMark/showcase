@@ -22,4 +22,4 @@ yarn-error.log*
 main.css
 *.cache
 
-.webp
+*.webp
