@@ -1,5 +1,5 @@
 var gulp = require('gulp')
-var newer = require('gulp-newer')
+// var newer = require('gulp-newer')
 var webp = require('gulp-webp')
 // mmq = require('gulp-merge-media-queries'),
 // sass = require('gulp-sass')
@@ -12,11 +12,13 @@ var webp = require('gulp-webp')
 // });
 
 gulp.task('webp', function() {
-  return gulp
-    .src(['src/**/*.*', '!src/favicon-*.*'])
-    .pipe(newer('src/'))
-    .pipe(webp({ quality: 100 }))
-    .pipe(gulp.dest('src/'))
+  return (
+    gulp
+      .src(['src/**/*.*', '!src/favicon-*.*'])
+      // .pipe(newer('src/'))
+      .pipe(webp({ quality: 100 }))
+      .pipe(gulp.dest('src/'))
+  )
 })
 
 // gulp.task('default', ['webp'])
