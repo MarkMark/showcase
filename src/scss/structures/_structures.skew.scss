@@ -14,4 +14,10 @@
     transform: skewY(-4deg);
     z-index: -9;
   }
+
+  &--shortTop {
+    &::before {
+      top: 20%;
+    }
+  }
 }

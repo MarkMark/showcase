@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { storiesOf } from '@storybook/react'
+import { storiesOf, withInfo } from '@storybook/react'
 import { MemoryRouter } from 'react-router'
 
 import '../scss/showcase.scss'
