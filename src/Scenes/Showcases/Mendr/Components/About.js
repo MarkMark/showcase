@@ -3,9 +3,12 @@ import React from 'react'
 import LineBreak from '../../../../Components/LineBreaks/LineBreak'
 import Img from '../../../../Components/Image/Img'
 
-import MendrIDE from '../Images/MendrIDE.png'
-import MendrLandingDesktop from '../Images/MendrLandingDesktop.png'
-import MendrResponsive from '../Images/MendrResponsive.png'
+import MendrIDE from '../Images/MendrIDE.webp'
+import MendrIDEFallback from '../Images/MendrIDE.png'
+import MendrLandingDesktop from '../Images/MendrLandingDesktop.webp'
+import MendrLandingDesktopFallback from '../Images/MendrLandingDesktop.png'
+import MendrResponsive from '../Images/MendrResponsive.webp'
+import MendrResponsiveFallback from '../Images/MendrResponsive.png'
 
 export default function About() {
   return (
@@ -83,7 +86,7 @@ export default function About() {
 
         <div className="o-layout">
           <div className="o-col u-text-align--center">
-            <Img src={MendrIDE} alt={'mendr IDE'} />
+            <Img src={MendrIDE} fallback={MendrIDEFallback} alt={'mendr IDE'} />
           </div>
         </div>
 
@@ -106,7 +109,11 @@ export default function About() {
 
         <div className="o-layout">
           <div className="o-col u-text-align--center">
-            <Img src={MendrLandingDesktop} alt={'mendr landing'} />
+            <Img
+              src={MendrLandingDesktop}
+              fallback={MendrLandingDesktopFallback}
+              alt={'mendr landing'}
+            />
           </div>
         </div>
 
@@ -224,6 +231,7 @@ export default function About() {
           <div className="o-col u-text-align--center">
             <Img
               src={MendrResponsive}
+              fallback={MendrResponsiveFallback}
               alt={'mendr homepage responsive sizes'}
             />
           </div>

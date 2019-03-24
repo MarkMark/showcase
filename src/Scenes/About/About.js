@@ -4,7 +4,8 @@ import { Helmet } from 'react-helmet'
 import Img from '../../Components/Image/Img'
 import Btn from '../../Components/Button/Btn'
 
-import Me from '../../img/misc/mark.jpg'
+import Me from './Images/mark.webp'
+import MeFallback from './Images/mark.jpg'
 
 class About extends Component {
   render() {
@@ -21,7 +22,7 @@ class About extends Component {
               <h1 className="u-text-align--center">About me</h1>
 
               <div className="c-circle c-circle--150">
-                <Img src={Me} alt={'Mark Schwanethal'} />
+                <Img src={Me} fallback={MeFallback} alt={'Mark Schwanethal'} />
               </div>
 
               <div>

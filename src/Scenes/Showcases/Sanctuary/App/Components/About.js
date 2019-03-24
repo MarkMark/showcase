@@ -3,7 +3,8 @@ import React from 'react'
 import LineBreak from '../../../../../Components/LineBreaks/LineBreak'
 import Img from '../../../../../Components/Image/Img'
 
-import SanctuaryDashboard from '../Images/SanctuaryDashboard.png'
+import SanctuaryDashboard from '../Images/SanctuaryDashboard.webp'
+import SanctuaryDashboardFallback from '../Images/SanctuaryDashboard.png'
 
 export default function About() {
   return (
@@ -84,6 +85,7 @@ export default function About() {
           <div className="o-col u-text-align--center">
             <Img
               src={SanctuaryDashboard}
+              fallback={SanctuaryDashboardFallback}
               alt={'Sanctuary mobile application dashboard'}
             />
           </div>
