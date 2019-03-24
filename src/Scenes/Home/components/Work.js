@@ -13,8 +13,11 @@ export default function Work() {
           {Thumbs.map(
             (work, i) =>
               i <= 3 && (
-                <div className="o-col--12 o-col--6@tablet o-col--3@desktop">
-                  <Thumb key={i} data={work} />
+                <div
+                  key={i}
+                  className="o-col--12 o-col--6@tablet o-col--3@desktop"
+                >
+                  <Thumb data={work} />
                 </div>
               )
           )}

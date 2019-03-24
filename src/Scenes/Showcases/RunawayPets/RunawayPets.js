@@ -22,6 +22,10 @@ class Runaway extends Component {
         <Expertise
           expertise={[
             'React Native',
+            'Redux',
+            'ES6',
+            'Await/Async',
+            'Jest',
             'Vanilla JS',
             'JSX',
             'Android',

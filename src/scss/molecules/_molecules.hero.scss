@@ -1,4 +1,6 @@
-.m-hero {
+$hero: m-hero !default;
+
+.#{$hero} {
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -21,5 +23,17 @@
   &__social {
     display: flex;
     justify-content: center;
+  }
+
+  &__device {
+    .#{$hero}--homepage & {
+      position: relative;
+      transform: translateX($global-spacing-primary);
+      z-index: 99;
+
+      @include mq($from: tablet) {
+        transform: rotate(-25deg) translateY(20%);
+      }
+    }
   }
 }

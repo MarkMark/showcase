@@ -1,9 +1,26 @@
 .u-text-align {
   &--center {
     text-align: center;
+
+    &\@tablet {
+      @include mq($from: tablet) {
+        text-align: center;
+      }
+    }
   }
+
   &--right {
     text-align: right;
+
+    &\@tablet {
+      @include mq($from: tablet) {
+        text-align: right;
+      }
+    }
+  }
+
+  &--justify {
+    text-align: justify;
   }
 }
 
@@ -13,6 +30,7 @@
   &--center {
     justify-content: center;
   }
+
   &--right {
     justify-content: flex-end;
   }
