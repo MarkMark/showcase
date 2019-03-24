@@ -3,7 +3,8 @@ import React from 'react'
 import LineBreak from '../../../../../Components/LineBreaks/LineBreak'
 import Img from '../../../../../Components/Image/Img'
 
-import CooltraxSettings from '../Images/CooltraxSettings.png'
+import CooltraxSettings from '../Images/CooltraxSettings.webp'
+import CooltraxSettingsFallback from '../Images/CooltraxSettings.png'
 
 export default function About() {
   return (
@@ -180,7 +181,11 @@ export default function About() {
 
         <div className="o-layout">
           <div className="o-col u-text-align--center">
-            <Img src={CooltraxSettings} alt={'Cooltrax app setting scene'} />
+            <Img
+              src={CooltraxSettings}
+              fallback={CooltraxSettingsFallback}
+              alt={'Cooltrax app setting scene'}
+            />
           </div>
         </div>
       </div>
