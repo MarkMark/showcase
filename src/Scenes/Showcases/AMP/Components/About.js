@@ -80,11 +80,15 @@ export default function About() {
           </div>
         </div>
 
-        <Img
-          src={AMPFeature}
-          fallback={AMPFeatureFallback}
-          alt="AMP feature page"
-        />
+        <div className="o-layout">
+          <div className="o-col u-text-align--center">
+            <Img
+              src={AMPFeature}
+              fallback={AMPFeatureFallback}
+              alt="AMP feature page"
+            />
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -3,7 +3,8 @@ import React from 'react'
 import LineBreak from '../../../../Components/LineBreaks/LineBreak'
 import Img from '../../../../Components/Image/Img'
 
-import RunawayPetsDetails from '../Images/RunawayPetsDetails.png'
+import RunawayPetsDetails from '../Images/RunawayPetsDetails.webp'
+import RunawayPetsDetailsFallback from '../Images/RunawayPetsDetails.png'
 
 export default function About() {
   return (
@@ -73,6 +74,7 @@ export default function About() {
           <div className="o-col u-text-align--center">
             <Img
               src={RunawayPetsDetails}
+              fallback={RunawayPetsDetailsFallback}
               alt={'Runaway pets app details scene'}
             />
           </div>
