@@ -33,7 +33,7 @@ export default function Hero() {
         </a>
         <a
           className="a-socialLink a-icon--github"
-          href="https://github.com/markschwa"
+          href="https://github.com/brodem"
           target="_blank"
           rel="noopener noreferrer"
         >
