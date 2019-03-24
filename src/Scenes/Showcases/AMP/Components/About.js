@@ -1,6 +1,10 @@
 import React from 'react'
 
 import LineBreak from '../../../../Components/LineBreaks/LineBreak'
+import Img from '../../../../Components/Image/Img'
+
+import AMPFeature from '../Images/amp-feature.webp'
+import AMPFeatureFallback from '../Images/amp-feature.png'
 
 export default function About() {
   return (
@@ -75,6 +79,12 @@ export default function About() {
             </ol>
           </div>
         </div>
+
+        <Img
+          src={AMPFeature}
+          fallback={AMPFeatureFallback}
+          alt="AMP feature page"
+        />
       </div>
     </section>
   )

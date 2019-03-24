@@ -3,7 +3,8 @@ import React from 'react'
 import LineBreak from '../../../../../Components/LineBreaks/LineBreak'
 import Img from '../../../../../Components/Image/Img'
 
-import SanctuaryWebDashboard from '../Images/SanctuaryWebDashboard.png'
+import SanctuaryWebDashboard from '../Images/SanctuaryWebDashboard.webp'
+import SanctuaryWebDashboardFallback from '../Images/SanctuaryWebDashboard.png'
 
 export default function About() {
   return (
@@ -70,7 +71,11 @@ export default function About() {
           </div>
         </div>
 
-        <Img src={SanctuaryWebDashboard} alt="Sanctuary website dashboard" />
+        <Img
+          src={SanctuaryWebDashboard}
+          fallback={SanctuaryWebDashboardFallback}
+          alt="Sanctuary website dashboard"
+        />
       </div>
     </section>
   )

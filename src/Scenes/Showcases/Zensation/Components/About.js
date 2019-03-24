@@ -2,7 +2,9 @@ import React from 'react'
 
 import LineBreak from '../../../../Components/LineBreaks/LineBreak'
 import Img from '../../../../Components/Image/Img'
-import ZensationHomepage from '../Images/ZensationHomepage.png'
+
+import ZensationHomepage from '../Images/ZensationHomepage.webp'
+import ZensationHomepageFallback from '../Images/ZensationHomepage.png'
 
 export default function About() {
   return (
@@ -75,7 +77,11 @@ export default function About() {
 
         <div className="o-layout">
           <div className="o-col u-text-align--center">
-            <Img src={ZensationHomepage} alt={'Zensation homepage'} />
+            <Img
+              src={ZensationHomepage}
+              fallback={ZensationHomepageFallback}
+              alt={'Zensation homepage'}
+            />
           </div>
         </div>
       </div>
