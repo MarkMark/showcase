@@ -6,6 +6,7 @@ export default function About() {
     'React',
     'React Native',
     'Angular',
+    'TypeScript',
     'Vanilla JS',
     'ES6 >',
     'HTML5',
